@@ -1,0 +1,37 @@
+{
+  "schema": "pulsemorph.submission_evidence_summary.v1",
+  "music_experiment": {
+    "live_model_calls": 4,
+    "hypothetical_previews": 3,
+    "actual_commits": 0,
+    "outcome": "Model revised29jointpaths fromphysicalfeedback and refuseddriftingrun; notapplieddance"
+  },
+  "persistent_wrist_task": {
+    "live_model_calls": 4,
+    "previews": 2,
+    "actual_commits": 2,
+    "right_error_mm": 11.398026713665445,
+    "left_error_mm": 11.69698377765793,
+    "fixed_tolerance_mm": 12,
+    "hold_s": 0,
+    "scope": "Samefinalactualbody endpoint; exactpreviewcommittraceparity; notgeneralrobotcontrol"
+  },
+  "nemotron_advisory": {
+    "live_calls": 1,
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "elapsed_seconds": 17.687,
+    "images": 2,
+    "tokens": 5845,
+    "decision": "revise",
+    "motor_tested": false
+  },
+  "zetaris": {
+    "account_provisioned": true,
+    "authenticated_product_query_verified": false
+  },
+  "qualifications": [
+    "Source-onlylocalreviewpackage; notpublicationorsubmission.",
+    "No new learnedweights orhardware/dancequality/admissionclaims.",
+    "Pre-eventdatesunknown; workspacehasnoGitroot history."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "pulsemorph.shared_capability_registry_build.v1",
+  "rows": 2,
+  "columns": [
+    "source_id",
+    "title",
+    "body_id",
+    "capability",
+    "evidence_class",
+    "license_scope"
+  ],
+  "contains_private_audio_or_raw_prompts": false,
+  "real_remote_query_executed": false,
+  "remote_table_created": false,
+  "csv_roundtrip_verified": true,
+  "row_schema_verified": true,
+  "capability_lengths": [
+    3570,
+    4240
+  ],
+  "input_evidence_sha256": {
+    "src/pulsemorph/agentic/app/runtime.py": "c09c563bf5895531b7eb03470bc3f6861fee09335c44a0676e1753e228c25863",
+    "experiments/agentic/app/execute_app.py": "5b985a1dd0454dfa5d84df8da49252b1dbd659cc1117c91e5ef6ef81c43c4e20",
+    "src/pulsemorph/agentic/multifeature_reference.py": "3fce10070c3e97efbffde863702083e2a8fca7e7f8ec5980078a35b355db4a9f",
+    "src/pulsemorph/agentic/local_multifeature_reference.py": "ce494009c5b0a783a7f91c2a2741fd6312f5d560483a55c0081b42dc96c29eaa",
+    "experiments/agentic/evaluate_multifeature.py": "c163ec3a1a3324f3dd0ce5f202cabc6cc5a6f91e53034b7dddcadac97ce89fcb",
+    "artifacts/runs/agentic/app_public_environment_v1/physics_independent_audit.json": "59426d642e1062b0852c329732d78ba3cd29e3c0259f215aa20834affc9062b5",
+    "artifacts/runs/agentic/app_public_environment_v1/physics_baseline/qvel.npy": "c1099e13e5699ac1eadea1d299178f1cfebb8084e8afe573c0e18b38919deb9e",
+    "artifacts/runs/agentic/app_public_environment_v1/physics_baseline/state_times.npy": "0aebe6d1fdb6e971871cf4d21377bf1b9e208eb993613778a33135d2c3914a90",
+    "artifacts/runs/agentic/high5_capability_v1_audit_v1/audit.json": "b1c9f25192f94d48fb120e04c6a1e4d922456998d5b6ccce1522551cbd23fde2",
+    "artifacts/runs/agentic/high5_local_capability_v1_audit_v2/audit.json": "029b7b7aa325948aa0fbe59cd0599b4a7b9252d7363cd0daaa85507f65c1295a"
+  },
+  "builder_sha256": "aed9e8514321e5d0c9163cbf0b97671b4b4d9d1d97186e3acccc6621688d71a9",
+  "outputs_sha256": {
+    "capabilities.csv": "69d05340970ae991629006616af2dd05cbb659fff86b116d3a3688b7b882ced3",
+    "records.json": "1aee9bec3e2b87974364445d1d6135cba54d51f742b60ec19ef2805361863b3e",
+    "schema.json": "1740aaa3557f880b01a96dac1f95478c650afc4c96dff6434117d458501195fe"
+  }
+}

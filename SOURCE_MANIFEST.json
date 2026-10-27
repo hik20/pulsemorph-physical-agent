@@ -1,0 +1,2669 @@
+{
+  "scope": "public agentic source only; private DanceModel excluded",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 139,
+      "sha256": "508609c7986acc7b22fa48d176f40c4e9c610431e78926439a4233b890106852"
+    },
+    {
+      "path": "docs/DEPENDENCIES.md",
+      "bytes": 2472,
+      "sha256": "042abaf9976e374fe911a845d6162b759bdeb39554530629caf9b969d73390cb"
+    },
+    {
+      "path": "docs/PREEXISTING_CODE.md",
+      "bytes": 1925,
+      "sha256": "3535d4a23563f92f3ee7e85bece6710132b0744bf77058d721aaf189a11b4c77"
+    },
+    {
+      "path": "docs/SUBMISSION.md",
+      "bytes": 11813,
+      "sha256": "a2a6ae8961e253ed5b21157c5448b0e8959b06b368e425da4c0088732eccb902"
+    },
+    {
+      "path": "evidence/summary.json",
+      "bytes": 1192,
+      "sha256": "227622c87d101da4e9391d1a84e7fc2d822d33245905588de2502acc17d69986"
+    },
+    {
+      "path": "experiments/agentic/app/audit_jobs.py",
+      "bytes": 16786,
+      "sha256": "68d73a8b6ecb9ebb02e809592259ee6d21e14df1d0ae51a07d87de4903ddcbb2"
+    },
+    {
+      "path": "experiments/agentic/app/audit_uploaded_job.py",
+      "bytes": 8291,
+      "sha256": "30e7173e54a0aec831d05ce2629a146c152e3e2aeef8ed4d1b6c797cbf619087"
+    },
+    {
+      "path": "experiments/agentic/app/bootstrap/audit_smoke.py",
+      "bytes": 2432,
+      "sha256": "393270a51c921b6f5a17a4a0b223416c26d78e73417b4e6c97f2ee21d85ef05b"
+    },
+    {
+      "path": "experiments/agentic/app/bootstrap/clone_installed.py",
+      "bytes": 6593,
+      "sha256": "458367a0eb90aff95c8dcea685802bdff766045ac414d20cc8d2bec649776955"
+    },
+    {
+      "path": "experiments/agentic/app/bootstrap/install_public_recipe.py",
+      "bytes": 7989,
+      "sha256": "c8ab180f54ccc4dca4965801e809c32ee75eae5fea5d66cbd1e41a6ff95d592d"
+    },
+    {
+      "path": "experiments/agentic/app/bootstrap/lock_environment.py",
+      "bytes": 3179,
+      "sha256": "d62b2f43a511880ff38912386bba62344d2e653a8ad2b1142ad6f7595ca5213d"
+    },
+    {
+      "path": "experiments/agentic/app/bootstrap/public_wheel_recipe.json",
+      "bytes": 12123,
+      "sha256": "7fb9f48647dfae52d9f0335820b3cc424423282d1bcc376271f5fd76d1ddaf64"
+    },
+    {
+      "path": "experiments/agentic/app/bootstrap/README.md",
+      "bytes": 13751,
+      "sha256": "c5fe0e3b00309663c00013f03b36413af7991e0af20f61381fddab6b31b787cb"
+    },
+    {
+      "path": "experiments/agentic/app/bootstrap/requirements-win-cp311-public.lock",
+      "bytes": 7127,
+      "sha256": "bc21ab8c2d3e55f9f602deb4c7fa71aa4528c386070fa62132a0425f723d8eca"
+    },
+    {
+      "path": "experiments/agentic/app/bootstrap/test_public_recipe_bundle.py",
+      "bytes": 1275,
+      "sha256": "1c92d7c6638a61b8bee2538e25c16910d188db68d732dad4014db7cb2b185f35"
+    },
+    {
+      "path": "experiments/agentic/app/bootstrap/verify_isolated.py",
+      "bytes": 3672,
+      "sha256": "27bcaad12cf5decbe731d3b1ec296a249ae4ea6b6f8091ca4607604d892f806c"
+    },
+    {
+      "path": "experiments/agentic/app/bootstrap/verify_public_install.py",
+      "bytes": 3949,
+      "sha256": "1223ac6ad32346a54f60850e4da0046a9abba5efeb2a0dd59bc6f930f21e6ed8"
+    },
+    {
+      "path": "experiments/agentic/app/build_demo_video.py",
+      "bytes": 15793,
+      "sha256": "09a5eb18e17f62f0ab975cb7b4ed0bc23d3eae3b2aba72845bedeb53b804178c"
+    },
+    {
+      "path": "experiments/agentic/app/deployment/materialize_local_v6.py",
+      "bytes": 5958,
+      "sha256": "ded960d376ef896f233f5cc4702b253a57025e05f16763529bb4455cbc1051f9"
+    },
+    {
+      "path": "experiments/agentic/app/deployment/prepare_dependency_fix_v2.py",
+      "bytes": 5178,
+      "sha256": "74a79a3b976b2fa25d1b82ffd3b629473f941c0534e21d57e8ac1ea7f45e3056"
+    },
+    {
+      "path": "experiments/agentic/app/deployment/README.md",
+      "bytes": 2603,
+      "sha256": "0f5b06e252db72e00b9db67724192e6b91eb4b67226b1615d8e7b9c3d6cfb692"
+    },
+    {
+      "path": "experiments/agentic/app/deployment/stage_v7.py",
+      "bytes": 5654,
+      "sha256": "fff426785425fd684354c1354de76fc95a242ecc10136d06edf62deedc49e960"
+    },
+    {
+      "path": "experiments/agentic/app/deployment/verify_preflight_v6.py",
+      "bytes": 2010,
+      "sha256": "ee556c2a33e1ff1369220af72cb6226a2d36fb740dac5c9ae95a0b218fbb8094"
+    },
+    {
+      "path": "experiments/agentic/app/deployment/verify_preflight_v6_retry.py",
+      "bytes": 2049,
+      "sha256": "7c69b0eae53160af2ed822a96acbdcc6ab2685ad889b812a726bc7ca2a95028d"
+    },
+    {
+      "path": "experiments/agentic/app/execute_app.py",
+      "bytes": 38034,
+      "sha256": "5b985a1dd0454dfa5d84df8da49252b1dbd659cc1117c91e5ef6ef81c43c4e20"
+    },
+    {
+      "path": "experiments/agentic/app/execute_walk_probe_v1.py",
+      "bytes": 37309,
+      "sha256": "92a616692371b64f99076a5443eace33949938a5a168b0a63392f468e9aaf497"
+    },
+    {
+      "path": "experiments/agentic/app/future_joint_probe_v1.py",
+      "bytes": 10440,
+      "sha256": "5aad4dd7ab021ef401efafb38fee182836c59b219ac96b6d459b4ba42a2c52eb"
+    },
+    {
+      "path": "experiments/agentic/app/future_joint_runner_v1.py",
+      "bytes": 8438,
+      "sha256": "ef815c92b04f71634f29651aeedcd3dc22b826b3fc3ce3a20152552d7bb1c0bb"
+    },
+    {
+      "path": "experiments/agentic/app/future_joint_runner_v2.py",
+      "bytes": 10248,
+      "sha256": "41b8a974d166559692a55b03a79b3a4168a4d7fc6758778db5ccea972ea75381"
+    },
+    {
+      "path": "experiments/agentic/app/import_response_snapshot_v1.py",
+      "bytes": 2758,
+      "sha256": "a0489d06f4c89b57cff131e68dcd88f64e8596929ccb9c9a28ca86f91d255499"
+    },
+    {
+      "path": "experiments/agentic/app/make_upload_smoke.py",
+      "bytes": 2015,
+      "sha256": "edfb0513631c6c83951c2d7e9d4a0316a11ab0a7c4a2ec7eaaba946e1b5c5043"
+    },
+    {
+      "path": "experiments/agentic/app/meterless_bridge.ts",
+      "bytes": 2282,
+      "sha256": "9abab43d6e6ff8a2145b8acda1d2d8cecc008061066cc222e3bf9a2311d4cc35"
+    },
+    {
+      "path": "experiments/agentic/app/package_demo.py",
+      "bytes": 10423,
+      "sha256": "9b28c83641739f06f96c3f79f8b29ab0dee1b1ccb97c2af2020f9a3c725139e8"
+    },
+    {
+      "path": "experiments/agentic/app/preflight.py",
+      "bytes": 19531,
+      "sha256": "66313fc36248da6b2d1b0970d5847b85bfd6ed6714cff4ed27b83a5ff373540d"
+    },
+    {
+      "path": "experiments/agentic/app/prepare_dance_assets_v1.py",
+      "bytes": 1180,
+      "sha256": "79e10ed5f29374da72b97429df907634f9aa6684a056f63e1e4779d15d261fd7"
+    },
+    {
+      "path": "experiments/agentic/app/prepare_phrase_assets.py",
+      "bytes": 4063,
+      "sha256": "d521e7d2280a174190ce71d94ce2dbc948620d328db3e01475726143f51cc9ef"
+    },
+    {
+      "path": "experiments/agentic/app/probe_descriptor_plan_v1.py",
+      "bytes": 7843,
+      "sha256": "4eecf2ead87fb14213a413933826f1270ca0a921990133f583fcdac97d60832d"
+    },
+    {
+      "path": "experiments/agentic/app/probe_expression_motor_v1.py",
+      "bytes": 12017,
+      "sha256": "9f09dd6a46dd4f1fec2497fb621bbcf6cd0b2edeeffeb359c36f15485d0ddc46"
+    },
+    {
+      "path": "experiments/agentic/app/probe_motor_response_v1.py",
+      "bytes": 1394,
+      "sha256": "aedde454338807359b26c3f1a4c5859959813dc067d80bf3591386c469899e94"
+    },
+    {
+      "path": "experiments/agentic/app/probe_phrase_expression_v1.py",
+      "bytes": 9951,
+      "sha256": "c92921b9f7bb0f7b3b90197463d3432576f39248f9268062cf00df86699a1579"
+    },
+    {
+      "path": "experiments/agentic/app/probe_response_plan_v1.py",
+      "bytes": 10036,
+      "sha256": "bab66afeafea63d84279164083d3f30579c26021344d78e69f12361b07ac2e12"
+    },
+    {
+      "path": "experiments/agentic/app/probe_walk.py",
+      "bytes": 15102,
+      "sha256": "bd8dc169f4db3f4cf27aedec010551bfe12d59b2769faffe16fd6c5a54144c91"
+    },
+    {
+      "path": "experiments/agentic/app/probe_walk_gains.py",
+      "bytes": 15956,
+      "sha256": "f984ebdbe82f63ffa7fa069b1c023d962fda91728b3b73303b14da1fd6c084ee"
+    },
+    {
+      "path": "experiments/agentic/app/README.md",
+      "bytes": 7924,
+      "sha256": "813118d40d8a981d7acb3648bb346dda8542253f2cfdb83ba86d45478bee37e9"
+    },
+    {
+      "path": "experiments/agentic/app/render_expression_motor_v1.py",
+      "bytes": 10655,
+      "sha256": "41a98caf9efdbb6694f2aaa0667caf69bf608d4105eb19c11b4ec92ec10462cb"
+    },
+    {
+      "path": "experiments/agentic/app/render_walk_probe_v1.py",
+      "bytes": 9157,
+      "sha256": "1a55c07cc1cd3b3353725e907206751bb790a11173c1c9a51952f44e2013c3dc"
+    },
+    {
+      "path": "experiments/agentic/app/requirements-app.txt",
+      "bytes": 215,
+      "sha256": "6bf4ba7b96d9e3a3575f25deafbf411fc80e1bc840ae80ec9806447667ebd5e7"
+    },
+    {
+      "path": "experiments/agentic/app/RESULTS_20261027.md",
+      "bytes": 5839,
+      "sha256": "04471bcc10bdf8d7eb0a202ef25573ca57570adc10b6ae236b8dac7872fbd4c0"
+    },
+    {
+      "path": "experiments/agentic/app/run_expression_studio_v1.py",
+      "bytes": 364,
+      "sha256": "440cdedb750c4bf9cd885f9a15939b64f7aec99a972e29717d63ee146284f0ba"
+    },
+    {
+      "path": "experiments/agentic/app/run_expression_studio_v2.py",
+      "bytes": 371,
+      "sha256": "d5eda2f2c79e826c248f4caac5334ed5c5aaefc0e2ac2ae74186041b62953e34"
+    },
+    {
+      "path": "experiments/agentic/app/run_expression_studio_v3.py",
+      "bytes": 381,
+      "sha256": "ab6d0d48d59310293fac2014c205fd3b8a7bcccc1b4ba5f4f8830edcc1786f0f"
+    },
+    {
+      "path": "experiments/agentic/app/start.ps1",
+      "bytes": 1012,
+      "sha256": "84101746ed4bb7a5f03c3f0f0c9c7880ea7732d4142744cbefb00c91611286f9"
+    },
+    {
+      "path": "experiments/agentic/app/start_dance_studio_v1.ps1",
+      "bytes": 896,
+      "sha256": "0e0f047af4c5624e1886676d8627d92ad524cfa0a93ba02db4e38165713241d4"
+    },
+    {
+      "path": "experiments/agentic/app/start_dance_studio_v2.ps1",
+      "bytes": 896,
+      "sha256": "972e63a02e21d2ae62e166d7470e4b2f10c4074eafc8be04c4ab07b9f60927ac"
+    },
+    {
+      "path": "experiments/agentic/app/start_dance_studio_v3.ps1",
+      "bytes": 896,
+      "sha256": "db1b5640881e61623a4a998a52c460e05a85d71a0fd584716b44c1d56cf33a8f"
+    },
+    {
+      "path": "experiments/agentic/app/start_expression_studio_v3.ps1",
+      "bytes": 639,
+      "sha256": "0e89099f0013f344c366cb06059a2eb230ff53be119737d51981be9bc0ddaa3d"
+    },
+    {
+      "path": "experiments/agentic/app/start_studio.ps1",
+      "bytes": 743,
+      "sha256": "74c862e2f001bb7c227047c53f28ecdf38958aa10a7154b16ea50683a3e6886e"
+    },
+    {
+      "path": "experiments/agentic/app/start_studio_v2.ps1",
+      "bytes": 757,
+      "sha256": "52fa3113a7c77450d5fe490535839f83b6ae55536804d27d3c1634a0363db7c3"
+    },
+    {
+      "path": "experiments/agentic/app/start_studio_v3.ps1",
+      "bytes": 757,
+      "sha256": "553a26d8c8d4160cc3d3723767b5955d20e325800fffc75ecdd59e95b2be203b"
+    },
+    {
+      "path": "experiments/agentic/app/start_studio_v4.ps1",
+      "bytes": 757,
+      "sha256": "03f471f4789274c70f82ea55928bf02513147360c240f99d38bcfbe22f6b7a72"
+    },
+    {
+      "path": "experiments/agentic/app/start_studio_v5.ps1",
+      "bytes": 757,
+      "sha256": "a6e5b4ee1f1e5dfe4a5f025a8248b7f26b31a3f866f17cc8491f6c3bcc36b135"
+    },
+    {
+      "path": "experiments/agentic/app/start_studio_v6.ps1",
+      "bytes": 757,
+      "sha256": "4d0ae0543d19be2c122f19090fa7e4d20598453bf586b631a44d78c5a596c77e"
+    },
+    {
+      "path": "experiments/agentic/app/start_studio_v7.ps1",
+      "bytes": 757,
+      "sha256": "aabcd2e61a9efb38affe0f5d6e428c8f9543fb379ea03b36748ebddac8d9593e"
+    },
+    {
+      "path": "experiments/agentic/app/start_studio_v8.ps1",
+      "bytes": 757,
+      "sha256": "67a3cffd1654492332c44afd7ee96e609f616595006a50567e67272bc08a07ae"
+    },
+    {
+      "path": "experiments/agentic/app/start_studio_v9.ps1",
+      "bytes": 757,
+      "sha256": "76b6ffd796756b5882cd1bce04619397a3ddde2aa5a875ea1105a04f2ae38042"
+    },
+    {
+      "path": "experiments/agentic/app/vision_probe/provider_inline.py",
+      "bytes": 6400,
+      "sha256": "c0a3072b821d0d0dd23db04cdfbae99ffdf62c392fa7f51620c1336b4693d0dd"
+    },
+    {
+      "path": "experiments/agentic/app/vision_probe/provider_reference_snapshot.py",
+      "bytes": 5592,
+      "sha256": "056058cd162412621cbaf9e8a39803b86d807f04d6c277062dc6f61f139859a4"
+    },
+    {
+      "path": "experiments/agentic/app/vision_probe/render_cases.py",
+      "bytes": 7351,
+      "sha256": "e9f7c7d55e69808c5f8ee9cb115842d8552bfc2dd1d1cf9bc1ee24a3a0bc0600"
+    },
+    {
+      "path": "experiments/agentic/app/vision_probe/run_probe.py",
+      "bytes": 7196,
+      "sha256": "5500cabd993f002d3d8e8ae116f14f1280c1734ec8c6ae5da5af3cf19608529f"
+    },
+    {
+      "path": "experiments/agentic/app/vision_probe/tests.py",
+      "bytes": 3720,
+      "sha256": "a8b4e42097e9bd4288d2668420377be5422df47c694f4f493a74a38728bd7ab8"
+    },
+    {
+      "path": "experiments/agentic/app/wide_clock_probe/bridge_checks.py",
+      "bytes": 7812,
+      "sha256": "077b8ed3c1f8656b948210818d60ad09ecc8a6c6ae6869d9ac7f5f30cd43dca3"
+    },
+    {
+      "path": "experiments/agentic/app/wide_clock_probe/execute_wide_clock_v1.py",
+      "bytes": 37274,
+      "sha256": "f1e25cfd1342d6fbcf89976e050a26cc86787ab85923b85ca44789c22ccc8c10"
+    },
+    {
+      "path": "experiments/agentic/app/wide_clock_probe/executor_diff.json",
+      "bytes": 5602,
+      "sha256": "4ed4017affed9e26462e374c0140318b788932290233867447c88dd38988a24e"
+    },
+    {
+      "path": "experiments/agentic/app/wide_clock_probe/executor_diff_review_v2.json",
+      "bytes": 5810,
+      "sha256": "b4fdb198dcc6257c967d44819f6c1e298707ca9b7f32dfac51ad8365b59368b9"
+    },
+    {
+      "path": "experiments/agentic/app/wide_clock_probe/prepare_protocol.py",
+      "bytes": 12018,
+      "sha256": "8011b79a7c47945a7991c0bf1defb0b6a882e6b661158998080e8d4737521c6e"
+    },
+    {
+      "path": "experiments/agentic/app/wide_clock_probe/runner_tests.py",
+      "bytes": 7070,
+      "sha256": "66b0a85056215a305814b3d29f86d94ebb6c7b5c123cf7f7d03dc42c14fd7956"
+    },
+    {
+      "path": "experiments/agentic/app/wide_clock_probe/runner_v1.py",
+      "bytes": 19893,
+      "sha256": "6044526f93fbb22671d3249890904cfe63cb6c3f2be7698d8dae4bab3cba1300"
+    },
+    {
+      "path": "experiments/agentic/app/zetaris/build_capability_registry.py",
+      "bytes": 9484,
+      "sha256": "aed9e8514321e5d0c9163cbf0b97671b4b4d9d1d97186e3acccc6621688d71a9"
+    },
+    {
+      "path": "experiments/agentic/app/zetaris/check_registry.py",
+      "bytes": 1319,
+      "sha256": "a5be55a88ea1b44d3dbb1eb36e817306213fd5131aebccbd788f54409bf17abd"
+    },
+    {
+      "path": "experiments/agentic/app/zetaris/README.md",
+      "bytes": 6817,
+      "sha256": "876ca8ea46547a78c036091026db7a60b0820c4c823dcc395e0d7092f8e2a108"
+    },
+    {
+      "path": "experiments/agentic/app/zetaris/registry_v1/capabilities.csv",
+      "bytes": 8902,
+      "sha256": "69d05340970ae991629006616af2dd05cbb659fff86b116d3a3688b7b882ced3"
+    },
+    {
+      "path": "experiments/agentic/app/zetaris/registry_v1/manifest.json",
+      "bytes": 2236,
+      "sha256": "72fa61b8979da1763f2c722ac53b1bac1685eec58d89f9b2117759b582302057"
+    },
+    {
+      "path": "experiments/agentic/app/zetaris/registry_v1/records.json",
+      "bytes": 9113,
+      "sha256": "1aee9bec3e2b87974364445d1d6135cba54d51f742b60ec19ef2805361863b3e"
+    },
+    {
+      "path": "experiments/agentic/app/zetaris/registry_v1/schema.json",
+      "bytes": 943,
+      "sha256": "1740aaa3557f880b01a96dac1f95478c650afc4c96dff6434117d458501195fe"
+    },
+    {
+      "path": "experiments/agentic/app/zetaris/validation_v1.json",
+      "bytes": 2984,
+      "sha256": "deac77ab0c3a3355b947102b17ea0d8e76d22657d49c025d9cfef61b414b4964"
+    },
+    {
+      "path": "experiments/agentic/audit_capability.py",
+      "bytes": 13898,
+      "sha256": "46f33f6c90f819c9b707f95dc5856059185e14c895cb9706f4192a17593de8ef"
+    },
+    {
+      "path": "experiments/agentic/audit_generalization.py",
+      "bytes": 25113,
+      "sha256": "7185ada1860fba59eaae44374703139c9b0de5d51dbf5036b86894a08b1c68a5"
+    },
+    {
+      "path": "experiments/agentic/audit_local_capability.py",
+      "bytes": 18096,
+      "sha256": "24e1bb4f45d12e437dfd77d1af8b1ad801646f1aa49c2076766ea7fd29c23a10"
+    },
+    {
+      "path": "experiments/agentic/audit_multifeature.py",
+      "bytes": 16983,
+      "sha256": "4a977f74fc5caacc583206e9b10df3b2a96802516c035fb9313ccfd994b5f55e"
+    },
+    {
+      "path": "experiments/agentic/audit_pd_steps.py",
+      "bytes": 10710,
+      "sha256": "bf555cecfc9dbeb57315d8a1b2331d2defb0b1c8312506e1cf5f210dcdf7401b"
+    },
+    {
+      "path": "experiments/agentic/audit_repair.py",
+      "bytes": 37082,
+      "sha256": "f3285d6af4158f537602cc4f99eb975029efeaaf6fa0dd5428ae4643291a1fb9"
+    },
+    {
+      "path": "experiments/agentic/audit_repair_legacy_fields.py",
+      "bytes": 11269,
+      "sha256": "555b0e23ec012a2f7cdac8b24d398ecbb0027b4a223db08e0a06e8c56a2c19ed"
+    },
+    {
+      "path": "experiments/agentic/audit_repair_v2.py",
+      "bytes": 45503,
+      "sha256": "84b00c60adbcaa77f1cae7949d9ddbecedc0e884bfd4f5f050d5694cc0c84d60"
+    },
+    {
+      "path": "experiments/agentic/audit_robustness.py",
+      "bytes": 39803,
+      "sha256": "765c7a893a13db10c9c20f071c55c53e0be36c4731335e68b09e4f5777641714"
+    },
+    {
+      "path": "experiments/agentic/audit_robustness_v2.py",
+      "bytes": 43587,
+      "sha256": "838e1f6f5fc1ce27feca1fe063a24bba6a52f24ac84659c1e033228816da08c1"
+    },
+    {
+      "path": "experiments/agentic/audit_tool_compatibility_smoke.py",
+      "bytes": 7325,
+      "sha256": "03934404712f4d892879595bded6e110a8f4fe495aac443604e6491844413bb8"
+    },
+    {
+      "path": "experiments/agentic/audit_tool_selection.py",
+      "bytes": 34119,
+      "sha256": "65849e606e45a8a3b4324ea39c7ebb500280f62e062da5950e10df46ec2a9d42"
+    },
+    {
+      "path": "experiments/agentic/audit_tool_selection_projection.py",
+      "bytes": 47730,
+      "sha256": "0bc5c8d5de7b97591ca6d550ff3b4a66fc813c090be8d28b06e3e11663006f49"
+    },
+    {
+      "path": "experiments/agentic/audit_tool_selection_v2.py",
+      "bytes": 36689,
+      "sha256": "a26b99ee8238e33764059bd7aa81f3c058e6c568c537c6fb279f7eacf274e13a"
+    },
+    {
+      "path": "experiments/agentic/capability_driver.py",
+      "bytes": 11098,
+      "sha256": "1bf92e56b1c4e0cc09e902c667b9e710d5be3d48b3ef33ef598fcde7cbf828de"
+    },
+    {
+      "path": "experiments/agentic/capability_plan.py",
+      "bytes": 6788,
+      "sha256": "70ecbb6adb4f39a77c18d3a3c811762aaf83c245545693ff1d541a8eaf1ab36a"
+    },
+    {
+      "path": "experiments/agentic/capability_preview.py",
+      "bytes": 19515,
+      "sha256": "3c85ec789c10cd186752f787c4f803ef53c5ee9f13c658ac58b04da40ca4e05e"
+    },
+    {
+      "path": "experiments/agentic/capability_search.py",
+      "bytes": 7280,
+      "sha256": "b71fb378a61105c5c4b925f83f2047bbed72bc12a15438bc6b5e43ec1b9d301b"
+    },
+    {
+      "path": "experiments/agentic/embodied/audit_episode_v1.py",
+      "bytes": 8054,
+      "sha256": "25d2c10fc6007e76fbf648a0658d03bd21531aa504580405dcdc4849066d082e"
+    },
+    {
+      "path": "experiments/agentic/embodied/audit_goal_v1.py",
+      "bytes": 8493,
+      "sha256": "891266d0702d1d477265024ff6e3516fae6774c5d394142c63cbfafea18a8baf"
+    },
+    {
+      "path": "experiments/agentic/embodied/audit_hybrid_v1.py",
+      "bytes": 12439,
+      "sha256": "b67ec42ccd77c971b263fc67e9bb09b91577a4c1d4f1a2c7c4a7ae5e6d4dadf8"
+    },
+    {
+      "path": "experiments/agentic/embodied/render_episode_v1.py",
+      "bytes": 11841,
+      "sha256": "79005c9eb028441353be2208cfe276fbcfd43ab0d7aa9ffd2743dda7a73730f1"
+    },
+    {
+      "path": "experiments/agentic/embodied/render_episode_v2.py",
+      "bytes": 14659,
+      "sha256": "1aeed67dfe60640e676c29b3343612474362812a2a96ab5e36838e4b932bfa3e"
+    },
+    {
+      "path": "experiments/agentic/embodied/render_episode_v3.py",
+      "bytes": 16280,
+      "sha256": "42e9e775656d52aee6140a13cabb0fecdcee4e8f16ac70a9c7ec1a8312573f5c"
+    },
+    {
+      "path": "experiments/agentic/embodied/run_hold_counterfactual_v1.py",
+      "bytes": 10859,
+      "sha256": "b09a1aec69fa1fd6d5405b7bb88d637dd840b4e42832d0c1fd448d33faeffc0a"
+    },
+    {
+      "path": "experiments/agentic/embodied/start_body_agent_v1.ps1",
+      "bytes": 788,
+      "sha256": "b8fd3f18e17059f42d6e0ac587040413af152e22df40f03a6aaf1e9a5a4ab57a"
+    },
+    {
+      "path": "experiments/agentic/embodied/start_body_agent_v2.ps1",
+      "bytes": 788,
+      "sha256": "42bb8c56f8bdb242c3226953083910761625e86f3a57f484b869973e46711807"
+    },
+    {
+      "path": "experiments/agentic/embodied/start_body_agent_v3.ps1",
+      "bytes": 788,
+      "sha256": "7ce76eed2a244b5e85c71c40bd39367ed2733373c12c8730552209347dd82d6c"
+    },
+    {
+      "path": "experiments/agentic/embodied/start_body_agent_v4.ps1",
+      "bytes": 788,
+      "sha256": "9395faeed7a870e02cb53145220c583b82bff95ed20bc569035dcd8a2fa9e9f5"
+    },
+    {
+      "path": "experiments/agentic/evaluate_generalization.py",
+      "bytes": 16803,
+      "sha256": "06132b0ff35a5078dd2ab43697f7ff406924e31209ad1aaba5f5f80b681f026b"
+    },
+    {
+      "path": "experiments/agentic/evaluate_multifeature.py",
+      "bytes": 14565,
+      "sha256": "c163ec3a1a3324f3dd0ce5f202cabc6cc5a6f91e53034b7dddcadac97ce89fcb"
+    },
+    {
+      "path": "experiments/agentic/evaluate_repair.py",
+      "bytes": 6925,
+      "sha256": "53099561815955260203de3619fb557f89113e1526fd9539ba639edf855e98e1"
+    },
+    {
+      "path": "experiments/agentic/evaluate_robustness.py",
+      "bytes": 8976,
+      "sha256": "2632310177e70f551f526b81f5845f5893afacf4ef6a2344be70c38391cd858a"
+    },
+    {
+      "path": "experiments/agentic/evaluate_robustness_v2.py",
+      "bytes": 1764,
+      "sha256": "f08c14d59830e94106ff6261b86de5b43f80008ce052e7872bdaa04bd27286df"
+    },
+    {
+      "path": "experiments/agentic/evaluate_trial.py",
+      "bytes": 12135,
+      "sha256": "fdb986c7f55cfdb886315a55dc43f16b1859a072943954aa981c1379dce1260b"
+    },
+    {
+      "path": "experiments/agentic/execute_generalization.py",
+      "bytes": 28023,
+      "sha256": "8a96abf6f4abf66923a3abfc91f7bb32b0536ba670f303b011e8ba5ee27703bf"
+    },
+    {
+      "path": "experiments/agentic/execute_local_capability.py",
+      "bytes": 28461,
+      "sha256": "0f08c36971669afe9a1f21dab9ad0776b798b8fffc0d6e5ba58a007698b013ab"
+    },
+    {
+      "path": "experiments/agentic/execute_multifeature.py",
+      "bytes": 22202,
+      "sha256": "a045b64d90055dd872fe140a18ef8fb6ded511d4b7217e2ab68db47108190a4c"
+    },
+    {
+      "path": "experiments/agentic/execute_repair.py",
+      "bytes": 38236,
+      "sha256": "07b3f46d886bf0cd69c14c911a663f227e86330b55a4cd7da554f412f3aa271a"
+    },
+    {
+      "path": "experiments/agentic/execute_robustness.py",
+      "bytes": 38446,
+      "sha256": "39032e868f0a5e197859a43c4195c0b08086121a02837e01f810b4c57f08be3f"
+    },
+    {
+      "path": "experiments/agentic/execute_tool_selection.py",
+      "bytes": 29952,
+      "sha256": "063a0b3e7089223f2f08d1b775bcb2e5793bffdc293447d632cf904b2f8c9d82"
+    },
+    {
+      "path": "experiments/agentic/execute_tool_selection_compatible.py",
+      "bytes": 31773,
+      "sha256": "797efcaebd5b09b0cdff030b471e297bdfd027290a85ce441009b817b8927953"
+    },
+    {
+      "path": "experiments/agentic/execute_trial.py",
+      "bytes": 18618,
+      "sha256": "b7102f5b9117052d270d1175eaac35f83ba0362ec6eb8b2ad6e9865d056dcceb"
+    },
+    {
+      "path": "experiments/agentic/export_common.py",
+      "bytes": 9316,
+      "sha256": "23cb54c3292971bf270400b894584a3a2b091ba5fc9058cd5d136b98a48b55d6"
+    },
+    {
+      "path": "experiments/agentic/generalization_driver.py",
+      "bytes": 18606,
+      "sha256": "585771ba6d04d6dfba52fe8de83f6b91d57b0d22b306881cf52d96090225dd53"
+    },
+    {
+      "path": "experiments/agentic/generalization_preview.py",
+      "bytes": 15516,
+      "sha256": "19eaed760623f641d2ef93530d6a6897cc7befa9f9afabec4daf5b333c9dfee4"
+    },
+    {
+      "path": "experiments/agentic/GENERALIZATION_RESULTS.md",
+      "bytes": 12306,
+      "sha256": "a7c95ad4ed29e0b988b0e2e61537e93940347f24d5f640bb6c355ad502c82b3e"
+    },
+    {
+      "path": "experiments/agentic/generalization_search.py",
+      "bytes": 5319,
+      "sha256": "2821ab4a0c7fac267558e3f3d4d4c51a78578b0d173f604a78ea43f940243bcd"
+    },
+    {
+      "path": "experiments/agentic/generalization_tasks.py",
+      "bytes": 8822,
+      "sha256": "8fe7161806e918d2cef8adf7e46a2a8f8b484716ac9e1630057f16cf85576512"
+    },
+    {
+      "path": "experiments/agentic/HIGH5_CAPABILITY_RESULTS.md",
+      "bytes": 12500,
+      "sha256": "7f25b239cc2be2255dab7aa5a022e74c382ed1586ff1a7aec72b8971d37a47d5"
+    },
+    {
+      "path": "experiments/agentic/inspect_tool_sources.py",
+      "bytes": 4527,
+      "sha256": "dfbdf5155f8db28acbcf38d96ea594618f2c864b3721de85289eace4f8f75bac"
+    },
+    {
+      "path": "experiments/agentic/local_capability_driver.py",
+      "bytes": 13045,
+      "sha256": "9dcd8194d473604e79251ce904c9af141d1af7a38def1d331979608d7c862739"
+    },
+    {
+      "path": "experiments/agentic/local_capability_plan.py",
+      "bytes": 7183,
+      "sha256": "e378a984dade1adc023c948ad6709fe40e31ba326feea815beed4bc6f156c178"
+    },
+    {
+      "path": "experiments/agentic/multifeature_driver.py",
+      "bytes": 18564,
+      "sha256": "51f7f6b9a152666c5adc9be08c8c96bcc9ec9f2212133fc204fa8739526947a2"
+    },
+    {
+      "path": "experiments/agentic/multifeature_preview.py",
+      "bytes": 13843,
+      "sha256": "7e96735b36c094899608f46bce7377a8769638c50f278d8772a6f7de39653c7b"
+    },
+    {
+      "path": "experiments/agentic/MULTIFEATURE_RESULTS.md",
+      "bytes": 15713,
+      "sha256": "173b9644448081e50d7be67ae194632f0778b771ce86e8a9b8891763d56870bf"
+    },
+    {
+      "path": "experiments/agentic/musical_tasks.py",
+      "bytes": 10219,
+      "sha256": "f204e16c6e0fe67d5da13f2485301081d95dbb67a17b80e013323f81a74bac66"
+    },
+    {
+      "path": "experiments/agentic/package_multifeature_data.py",
+      "bytes": 11525,
+      "sha256": "5dd683bf977cfbc99606be5b56bbfd297311fc52442c8ec871edf78119e8dd5f"
+    },
+    {
+      "path": "experiments/agentic/package_repair_delivery.py",
+      "bytes": 25080,
+      "sha256": "eda0cca79e8f1938dd95076e3600c1388453d5715496aba982912e0e6135fa7d"
+    },
+    {
+      "path": "experiments/agentic/package_robustness_delivery.py",
+      "bytes": 5489,
+      "sha256": "09752d46b41c044c4c91be88dc7ba541c538c84a50b9e1e3c9ad88bc3b3055b5"
+    },
+    {
+      "path": "experiments/agentic/performance/start_performance_v1.ps1",
+      "bytes": 791,
+      "sha256": "fa5c402d549bf3e2577337265dce2c1b78743d9aaae0f2fb731387e40a735f55"
+    },
+    {
+      "path": "experiments/agentic/phrase/adapter_program_v1.py",
+      "bytes": 5965,
+      "sha256": "d34ffd5d56bf324e7dcb2c4f9063ae7b533d23ac5d50e464e5bcf3dc60ad8f47"
+    },
+    {
+      "path": "experiments/agentic/phrase/adapter_v1.py",
+      "bytes": 5952,
+      "sha256": "ed8d44776161f847c9dc576e9ad03ba1baf5cf4a853134a117d311d03f52d00d"
+    },
+    {
+      "path": "experiments/agentic/phrase/compile_program_v1.py",
+      "bytes": 6549,
+      "sha256": "e0b0beeadc5cf0d6fa072cdf8f4ae3f1892d2a9e5dd8409a51ecc18fd6d1b35e"
+    },
+    {
+      "path": "experiments/agentic/phrase/execute_phrase_v1.py",
+      "bytes": 21123,
+      "sha256": "0ab30ea1237295d5ed1a5b6fbb3100b9d253a9eb4b520abd22424e0ae857a7ed"
+    },
+    {
+      "path": "experiments/agentic/phrase/execute_program_v1.py",
+      "bytes": 21424,
+      "sha256": "68ebe4f3dcf1457a5cddcb4db6b5099ec10db045e47fe49aa4ee18a5149cbea5"
+    },
+    {
+      "path": "experiments/agentic/phrase/plan_program_v1.py",
+      "bytes": 3308,
+      "sha256": "97d2bd21de6b2f1574db4097b31989fd00240f33af897a840c48a054b42f65d2"
+    },
+    {
+      "path": "experiments/agentic/phrase/prepare_program_executor_source_v1.py",
+      "bytes": 4693,
+      "sha256": "1e93fc7264c7ca37a2befcb6d0b44c933d068dab748c6981037e57936caaf217"
+    },
+    {
+      "path": "experiments/agentic/phrase/prepare_program_music_v1.py",
+      "bytes": 4202,
+      "sha256": "27b71c9552143c59c87b367b7f701d68bfad8d3b6eab808138b8db5fdb95b6ce"
+    },
+    {
+      "path": "experiments/agentic/phrase/prepare_reference.py",
+      "bytes": 8377,
+      "sha256": "983a30fb973532ce464743b4bfafb9bb8c766abf39f17a7b6cc746b193630ae4"
+    },
+    {
+      "path": "experiments/agentic/phrase/prepare_reference_v2.py",
+      "bytes": 9383,
+      "sha256": "a9a18a265bbeb1870b00b6299e46cd21e7509b12fd6a331eaad5673b9c81779d"
+    },
+    {
+      "path": "experiments/agentic/phrase/render_program_v1.py",
+      "bytes": 13065,
+      "sha256": "5f26df5e1884b508bd67f90a04d52b0d0c8ab74352ca0dc2f38b8334176eb289"
+    },
+    {
+      "path": "experiments/agentic/phrase/render_saved_v1.py",
+      "bytes": 4215,
+      "sha256": "714fec0aadb7cfb7b5ecc5850f26470a55dae327cdff33d0efcad8b00db584ff"
+    },
+    {
+      "path": "experiments/agentic/phrase/review_program_execution_v1.py",
+      "bytes": 3265,
+      "sha256": "fa926197cf04adeaa9702ae52d04c3e6cc7a2495e4e976703cab2cf392c155a4"
+    },
+    {
+      "path": "experiments/agentic/pilot.py",
+      "bytes": 12600,
+      "sha256": "6aa62831603e19f36ca9ba14946be65337d09db3ebe16a79d9fa1c64ca308942"
+    },
+    {
+      "path": "experiments/agentic/preview.py",
+      "bytes": 10671,
+      "sha256": "e77fe6434f2c6faadec961bde2fe9eced6af40a8194f55abb5f0f661e7754ba1"
+    },
+    {
+      "path": "experiments/agentic/project_tool_reference.py",
+      "bytes": 10319,
+      "sha256": "3997064ce272aaa7564156f69843e5387bc6363f145f9379d7aee412c2b7e726"
+    },
+    {
+      "path": "experiments/agentic/README.md",
+      "bytes": 12789,
+      "sha256": "8aef760153959a8be144a054e3e203230520030bfe6038dcc5bb019ea8f279c0"
+    },
+    {
+      "path": "experiments/agentic/record_generalization_call.py",
+      "bytes": 1487,
+      "sha256": "ed35e16bfd2733989beaaa3e182c37245f968b41f5f15a924117fb2417d436ec"
+    },
+    {
+      "path": "experiments/agentic/repair_driver.py",
+      "bytes": 19290,
+      "sha256": "fad48e9fc8017d3a633589a186d20b893b56c5e9daea602a3964ac95d4e10c52"
+    },
+    {
+      "path": "experiments/agentic/repair_model_io.py",
+      "bytes": 4105,
+      "sha256": "a9c9e78b7263efd3a3125be5a8958f18661f25a717295c0f87f2e2e954dd8829"
+    },
+    {
+      "path": "experiments/agentic/repair_plan.py",
+      "bytes": 8657,
+      "sha256": "50b531516b1b64f29fdf1e014ed3b4cdc7fdf7a0c7b1eb7c4159751d48488ee5"
+    },
+    {
+      "path": "experiments/agentic/repair_preview.py",
+      "bytes": 15904,
+      "sha256": "25ca859503b968710de852ec80e633353b97b6ad6205277f24abafe84bcb1f13"
+    },
+    {
+      "path": "experiments/agentic/REPAIR_RESULTS.md",
+      "bytes": 7559,
+      "sha256": "3d302e01c72a221b5e514d173a2ecb3cb7ea9c6b4853bfbd5cd902f2f8d317fd"
+    },
+    {
+      "path": "experiments/agentic/repair_search.py",
+      "bytes": 10697,
+      "sha256": "f1ba62776bd8d41b7fe6b4f3b5ff1bed87a4428a0af981e5421c5d12f8d5c7f3"
+    },
+    {
+      "path": "experiments/agentic/report_generalization.py",
+      "bytes": 15914,
+      "sha256": "faddd62913b966f7527d0f31c0cca9865ded37b774bd4554c4c6d8df74676711"
+    },
+    {
+      "path": "experiments/agentic/report_repair.py",
+      "bytes": 18917,
+      "sha256": "22ecc78f695430fe78affbadb298f133899fb3ee608639d4c51e042487182595"
+    },
+    {
+      "path": "experiments/agentic/report_robustness.py",
+      "bytes": 16324,
+      "sha256": "ac1c3039a6723c253608929a0062325dd640232b2bc3fcc0bdc08428f2911672"
+    },
+    {
+      "path": "experiments/agentic/robustness_driver.py",
+      "bytes": 10069,
+      "sha256": "1c799db6bc3d10ba678ad500aa7d798fe2bba6d35ad872d140a8b1cba9f0ead2"
+    },
+    {
+      "path": "experiments/agentic/robustness_driver_v2.py",
+      "bytes": 10105,
+      "sha256": "efb9ce771b3a156e83ee0480bab78fdd06c2a03606d6d01697b8065b0324e75f"
+    },
+    {
+      "path": "experiments/agentic/robustness_plan.py",
+      "bytes": 10774,
+      "sha256": "bfd528ef84d42af12c351fb0b0e3a46f2b034fc374a6b02da91355b492b678b2"
+    },
+    {
+      "path": "experiments/agentic/robustness_plan_v2.py",
+      "bytes": 8116,
+      "sha256": "0ec4aa3baf0e10134819495da2a46081219233d6404c642d74cf158389ca2dc2"
+    },
+    {
+      "path": "experiments/agentic/ROBUSTNESS_RESULTS.md",
+      "bytes": 8870,
+      "sha256": "d7e2214f4aeb3171e35547881506ef0d54310aa12cffe6b0dc9afdf1f7daeec3"
+    },
+    {
+      "path": "experiments/agentic/robustness_scenarios.py",
+      "bytes": 3263,
+      "sha256": "006a5c86a54bb4d39d0fdbbb9d561d0ea7cb1758a0f1b1c300fcf6b80526ab65"
+    },
+    {
+      "path": "experiments/agentic/run_generalization_batch.py",
+      "bytes": 1591,
+      "sha256": "a8792901b388b8367e161e435efad3f25dcb6c7ab20beed6077ea7dc94375cd2"
+    },
+    {
+      "path": "experiments/agentic/run_generalization_feedback_round.py",
+      "bytes": 1613,
+      "sha256": "770e3e65127481804604294e56f1a503f57f686cfa54492160dedc6bfad2ed5b"
+    },
+    {
+      "path": "experiments/agentic/run_multifeature_batch.py",
+      "bytes": 1500,
+      "sha256": "3092db4cb27a41562b70bcb2a6b42e2920cbda6d3b7f292ded67ec42b1f032cd"
+    },
+    {
+      "path": "experiments/agentic/run_tool_compatibility_smoke.py",
+      "bytes": 11726,
+      "sha256": "fbea11710ff2572232b77b28130d6a7df88a48ceb17ab4d072d0f5fc4fc53290"
+    },
+    {
+      "path": "experiments/agentic/run_tool_compatibility_smoke_v2.py",
+      "bytes": 11198,
+      "sha256": "ddeef2d3b163dbf824a0b81e9344db43088c87bd897c50e1f93d472db41ae89d"
+    },
+    {
+      "path": "experiments/agentic/tool_selection_batch.py",
+      "bytes": 1981,
+      "sha256": "64b0a96011dc7c3ebc0922623dac45a99874dc93fad9c27c0f187604e1e5759f"
+    },
+    {
+      "path": "experiments/agentic/tool_selection_batch_v2.py",
+      "bytes": 2022,
+      "sha256": "d59fd28ab0882322d26d4a51b54aa83f02d6d609f98355b6c2f75a0ec24d1492"
+    },
+    {
+      "path": "experiments/agentic/tool_selection_driver.py",
+      "bytes": 31305,
+      "sha256": "3710912bf13fcf83c6e59a7da0b5f0bd75c049565532a293805f3d11db8c56af"
+    },
+    {
+      "path": "experiments/agentic/tool_selection_driver_v2.py",
+      "bytes": 32253,
+      "sha256": "6de6ea9946998ab7da88899a258c5b7d235ad54b053461b4ba66050289c0b5a9"
+    },
+    {
+      "path": "experiments/agentic/tool_selection_preview.py",
+      "bytes": 8076,
+      "sha256": "53ca685e008a7e14db3be8a89d5a542de0ae9241b335cf4fa181060773fbaa83"
+    },
+    {
+      "path": "experiments/agentic/tool_selection_preview_projection.py",
+      "bytes": 12607,
+      "sha256": "59ace83b834ecb347996644eef00b5472d35e7afcfab577bc5ede1f1aa38567a"
+    },
+    {
+      "path": "experiments/agentic/tool_selection_preview_v2.py",
+      "bytes": 9082,
+      "sha256": "a5b6ad51bec6767c6989aaa0838a39f5a197b6c01eba942fb6132663e6990441"
+    },
+    {
+      "path": "experiments/agentic/TOOL_SELECTION_RESULTS.md",
+      "bytes": 27148,
+      "sha256": "cbd73412283900886a2f965759da08932edf87bdaa7db915fc4dbed4de0b9635"
+    },
+    {
+      "path": "experiments/agentic/tool_selection_search.py",
+      "bytes": 7714,
+      "sha256": "50c108a38ef2a9a79784e89bb3208f0a29f84f6e2d1215074cb8aed998d44a71"
+    },
+    {
+      "path": "experiments/agentic/tool_selection_tasks.py",
+      "bytes": 8806,
+      "sha256": "922500f0bee3baa39110952cb60ecca86b76adb75de421249c01f864b3c46bd6"
+    },
+    {
+      "path": "experiments/agentic/tool_selection_tasks_v2.py",
+      "bytes": 9340,
+      "sha256": "ac7107671a3f5ef41afdb60e0d9d69e7cd9ff0e1bb8ee13e05d40beec5f14eaf"
+    },
+    {
+      "path": "experiments/agentic/workflow.py",
+      "bytes": 10075,
+      "sha256": "6985aaa3045977db287952397a7e6d9ef84a10b89cea5f6a305459d444f0e54f"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1337,
+      "sha256": "c8a83aa6767ed2920eed346fade7f63c5b63e8824f59f23f67a0b17e0f60bc24"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 333,
+      "sha256": "8852df7c04c7ba9a252962f8aeb30abf082a57a55317f891890a750c4a7e6eb0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6978,
+      "sha256": "bfe2c6833abef0f0e56b09410f9fe1357d0a4a6290e0861c6226321c4a629967"
+    },
+    {
+      "path": "requirements-observed.txt",
+      "bytes": 240,
+      "sha256": "36c1871781f6adbe85a0c80d740ea09a626de88594c8fa9d2bd2957a4a549028"
+    },
+    {
+      "path": "src/pulsemorph/__init__.py",
+      "bytes": 106,
+      "sha256": "85ee4036a66c3df435b3ed75fcf4aee52adc5ad160d5f3940a0999fa20a22fa3"
+    },
+    {
+      "path": "src/pulsemorph/agentic/__init__.py",
+      "bytes": 82,
+      "sha256": "ddab027221eb95c9798afa889059ed79768101fb555d481b986b6b39539114e9"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/__init__.py",
+      "bytes": 82,
+      "sha256": "ac21474534e98a08bf3c2528b97fd56caf15363acfd4e7544d59b6a284243259"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/exports.py",
+      "bytes": 17530,
+      "sha256": "ce1dcba6399684dd207d452b53dda13cb38b4ceba301277e6f4719c7af39a45b"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/integrations.py",
+      "bytes": 14718,
+      "sha256": "15ce1efe7d31133a3356ccc1eda1a4f3081b828c5604a5f7f4dce8d907155501"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/music.py",
+      "bytes": 9042,
+      "sha256": "07d7e3275b628bf728c5bf7a6eba006ed1906b2a3d8b31f65fafa670314a8b32"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/orchestrator.py",
+      "bytes": 30642,
+      "sha256": "4849e5ab491829e8d995889297468dca0e63dd3220c3d373727a036e4f1c5d70"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/__init__.py",
+      "bytes": 77,
+      "sha256": "cf02b13b641eeb681adf9728215667f5460158a45ff4874cfb1498a64e1f0f86"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/assets.py",
+      "bytes": 4372,
+      "sha256": "8e705c24f5bd822cfbe3d3bc9354f3d11b6cace9c98755ecb1d2b997a0e006b6"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/catalog.py",
+      "bytes": 1129,
+      "sha256": "9da760bb7eb3e819e12ce80a3b2b9a523f0bb1b237e4da479f7e91e8a9bf9d3c"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/entrypoint_v2.py",
+      "bytes": 1728,
+      "sha256": "ef32bca20ab4b5eacd726b4533dfb7252309aae449c1adf95a19311d99d87b4b"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/entrypoint_v3.py",
+      "bytes": 2031,
+      "sha256": "0a39847e0f035c762da251d861a5ad469a055c97e88d2efce559029d9af213e5"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/entrypoint_v4.py",
+      "bytes": 2047,
+      "sha256": "e1a9995b39246e621395647a94404e924a892db9b79d48a900913a350efe0ad6"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/entrypoint_v5.py",
+      "bytes": 2048,
+      "sha256": "741b6bbd49e40989380c93d766919677b954ced56d1ba1ae18efc96e2e4f2d86"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/entrypoint_v6.py",
+      "bytes": 2074,
+      "sha256": "eccfdb04f5f9294848219f0f8f8ceac69595b20e87f8190f701833083575b6a2"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/entrypoint_v7.py",
+      "bytes": 2065,
+      "sha256": "b6286d4fb4db39bbf59bdc20d097baf858953affd95316fef5644e26f6171dee"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/entrypoint_v8.py",
+      "bytes": 2069,
+      "sha256": "8eef9c19e93e33b85debc6eca1535b493add380ee8f874a261014cf975f10b07"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/entrypoint_v9.py",
+      "bytes": 2072,
+      "sha256": "7135011428a5d3e17bd4c9db4ed89335de62f7be9769b127ced89ed0b044410f"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/exports_goals_v4.py",
+      "bytes": 12684,
+      "sha256": "346640a7323f6d711757d12184ef4849d6025f632147ae3a05665c469ccd9e57"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/exports_v1.py",
+      "bytes": 37437,
+      "sha256": "4bb455c3ac4785b162b7b6f22fb7353dc13bda46f263f8ce615c285564e0d9ac"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/gain_advice_v1.py",
+      "bytes": 8186,
+      "sha256": "e2eb150c263763ec65e5664accfb5d148738a29c5ce589196454ac5cade01cf2"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/goals_v1.py",
+      "bytes": 902,
+      "sha256": "657c66a88bb96a24ac2cc05ea217357fa11f68c5ff1bccafee22f3f05dd0d925"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/manager.py",
+      "bytes": 23390,
+      "sha256": "85d1f90a5397ef91e8919d0aa985b37eec55ff0820f16f512cebd6221b4f594b"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/manager_advice_v5.py",
+      "bytes": 6488,
+      "sha256": "55dbfe83783af77cea83969d47430b927280b041522cd5cfdea697715cb3c7fd"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/manager_descriptor_v6.py",
+      "bytes": 1111,
+      "sha256": "02160090ce0f7c90b3a47eab88071a1b702a290405c6add26c641f32f03e87ed"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/manager_goals_v4.py",
+      "bytes": 13089,
+      "sha256": "e02a97f9916e484f2aa3437054ce3831ab039aa678a1d892b4f02f070b1ef67b"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/manager_response_v8.py",
+      "bytes": 1856,
+      "sha256": "4f261f890498d7f2b795bac25b335ddd4b68c6d589449d404ae3b6af13fe7906"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/manager_response_v9.py",
+      "bytes": 1888,
+      "sha256": "feabc4d5a7d48320a7875165f4b750ae0621789311c0600e0f0c37dffb4db62e"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/motor_response_v1.py",
+      "bytes": 12030,
+      "sha256": "7ca1713c766d2f58895a6a8de89e4171a3265f3a11a47e54d0ebf6b134f69277"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/music.py",
+      "bytes": 10626,
+      "sha256": "f722ebfe7190a66858a44adf0a0abb057af7aabb4e8fcbb815fa9875e4abce6d"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/renderer.py",
+      "bytes": 9465,
+      "sha256": "7819be6a6f32c29ad15fc2489e316b0c05a86674daa84ddb4971fa3f8c15fae4"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/response_evidence_v1.py",
+      "bytes": 16113,
+      "sha256": "fdeba87167cb519962f30f59e48fd0473a5dcae202e0f1f6ba57cd72b7c87180"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/response_snapshot_admission_v1.py",
+      "bytes": 317,
+      "sha256": "cb8c4830506204ac57323ac6a7bc1ea3f13740d335cc1ea90ed2541e92198949"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/response_snapshot_v1.py",
+      "bytes": 12071,
+      "sha256": "fa022fcc42cec76ddd7315fbbcd6c25e2a2c2c415ca0c5ce9555e253bf75aa8e"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/runtime.py",
+      "bytes": 12913,
+      "sha256": "3cd611b86b2789a8f8f951264df71b5a6d76432cb58efd4380f412db437bea4e"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/server.py",
+      "bytes": 10743,
+      "sha256": "0f1257caf37e87f6aa0e52436965ea944348feb07a583012224198ef1fc6f394"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/server_advice_v5.py",
+      "bytes": 3242,
+      "sha256": "48a1b0f374c1637c8250d4247380778eb89f037eff4f1eb0b4d1caab1ee8bbb6"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/server_descriptor_v6.py",
+      "bytes": 1326,
+      "sha256": "5df82ebca3e9d8cbc20703a7b8c76bdca0cb2b670b81fd80a04450c8816a8889"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/server_export_v3.py",
+      "bytes": 3008,
+      "sha256": "c33221edf269231ecc96770c4c26e4afa55f7604bdfcee4781b1be8368f387de"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/server_goal_gap_v7.py",
+      "bytes": 915,
+      "sha256": "cb995ec41d489f08f9452eecae22718b1386a2294fd7f06fdf4ff5fb10ad64b9"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/server_goals_v4.py",
+      "bytes": 3011,
+      "sha256": "bcccb4beb5780301fd4faba150b7402dbbaef7809a263bb070d1f32052fca7c6"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/server_response_v8.py",
+      "bytes": 3279,
+      "sha256": "3101957b81c93e16d0b41bba12c23577e02d84f4ba5695c6c4ca7716e2d4579e"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/server_snapshot_v9.py",
+      "bytes": 2328,
+      "sha256": "e49a4a365d8a9203049c832066c464e1b8a3761339f21ecbfce13ec299963ba8"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/source_descriptor_v1.py",
+      "bytes": 5526,
+      "sha256": "3e7639639c0a439bd10e85cc03d3805d3b4e5433077b5afbdd5882a36b097dbe"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/phrase/worker.py",
+      "bytes": 26348,
+      "sha256": "b5094222e588746d10bfa41dab5309f5480e706eeed9e2a1f6ed978a67d5c1b4"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/providers.py",
+      "bytes": 5482,
+      "sha256": "c15d45e5b0f4ac6017e3f3ed83d489f32c2d7483d5ef38d6c68c9677445e0bfd"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/renderer.py",
+      "bytes": 9079,
+      "sha256": "8373e9c3640c4ab2afe0646028676f29431d67bda367df095082ee183aad1f0e"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/runtime.py",
+      "bytes": 8808,
+      "sha256": "c09c563bf5895531b7eb03470bc3f6861fee09335c44a0676e1753e228c25863"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/runtime_config.py",
+      "bytes": 5025,
+      "sha256": "cf6e09ea88bbc24e66a1b5495a0a76fe57f0b00d3104fdd411381f25c06a70a8"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/server.py",
+      "bytes": 12983,
+      "sha256": "3e60a3b209d760fcf7eaf525f8ccd3aafcd6a6b8c34fcf856ed5e24081bad725"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/app.js",
+      "bytes": 39729,
+      "sha256": "641cee57b5c8bfe2fdf5a48fe2dfd0ac13df11ea4a3059a07322b0a9ed46ff33"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/index.html",
+      "bytes": 11185,
+      "sha256": "8c11e4efa05fbd747670fb6d64dc5ae9b90f3b5fa51ebb54d4c0cf628917cda5"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/phrase.css",
+      "bytes": 12101,
+      "sha256": "cf236c4fd59daea4eedbe56f2e34a6da54c8f4d53c0fac36b37e285b29c774a5"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/phrase.html",
+      "bytes": 7476,
+      "sha256": "17be0b8ab07f3d17767ea2d940236e31ca4b91751d23382cc5ebbf899a19b020"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/phrase.js",
+      "bytes": 25374,
+      "sha256": "ca35bc88ceb161237d1d5c1303ea5273b41e35fe1138084071c917c7762b9427"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/phrase_v3.html",
+      "bytes": 8035,
+      "sha256": "caf31ce30d270b7304359cb9005733724622bf3fb589b3d18f9600c24df4178b"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/phrase_v3.js",
+      "bytes": 27647,
+      "sha256": "27fabcbbe93ed4c7e7c616aee455dfc1f05cc42689ea57f30c9d616e47bbb5bc"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/phrase_v4.html",
+      "bytes": 9278,
+      "sha256": "b103ee323db1b55770c0d70c01faf8788a16957c43e2295777f09e074a1740d4"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/phrase_v4.js",
+      "bytes": 29115,
+      "sha256": "c61dc4ef1ba213a1aba3c2c8c31a8cc69bc1855207eb0eaca99f1571b475af06"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/phrase_v5.html",
+      "bytes": 9278,
+      "sha256": "d2e88341b715cf6b2ab525fb69b1e5abb49f76869813e00aeccf0181c710c9ab"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/phrase_v5.js",
+      "bytes": 30803,
+      "sha256": "0e54f69b5b18115e143697f30e2164e0f04886d215893f2df5feac133f32534f"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/phrase_v6.html",
+      "bytes": 9928,
+      "sha256": "950e843f0b78fd16986504913d260c96eac3bcdf07d14e2495b095aeb57b24e6"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/phrase_v6.js",
+      "bytes": 33005,
+      "sha256": "e8d51a2f285b50417f72883c7a33d041c5a0ddc87eddf4ace9dd9f16f8bf622f"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/phrase_v7.html",
+      "bytes": 9997,
+      "sha256": "f09e4756a54866c069421497d88fb3d13456d479e6b023db20aa66002301e56a"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/phrase_v7.js",
+      "bytes": 35707,
+      "sha256": "2eb8e3117dab8b8aacb50ad9c34eafacce4ffcad880eec8e27462c1cb5ba5c49"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/phrase_v8.html",
+      "bytes": 10917,
+      "sha256": "f8903d47ed47ac111535301434e646b90020ee40ad401f481d51cb5bda44a7a0"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/phrase_v8.js",
+      "bytes": 42609,
+      "sha256": "57aa4b94ec481b40faeead9bb8dcaaaf56a820f986e80cd76619e80bb3c26298"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/phrase_v9.html",
+      "bytes": 11386,
+      "sha256": "8d283b295ef883a2a600384540d54c830ccdbbe28cc6193ec2a7f77e4c35114e"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/phrase_v9.js",
+      "bytes": 45259,
+      "sha256": "b9e4ae7a16e92e2683a5d4681c2009bbc7f22a808545331fccabc3088a6b939b"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/studio.html",
+      "bytes": 1307,
+      "sha256": "c009ecb0dd72e6a7d7fd104f318361470374e3fdab66f27ad3b47019fc2228ef"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/studio.js",
+      "bytes": 811,
+      "sha256": "ac0683ef2183800e8e176342d15a334ae0d5dba93d241fa3f570cba54996b492"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/static/style.css",
+      "bytes": 22785,
+      "sha256": "a6cdc7d558a8f753163337d36c81b9af6a98133ffb0729542a7bd93f5178cc20"
+    },
+    {
+      "path": "src/pulsemorph/agentic/app/uploads.py",
+      "bytes": 14957,
+      "sha256": "4f61016bf14a6747c0ad7cc2c16f02292ab0989fd3a0311d9a8cb25883f517c9"
+    },
+    {
+      "path": "src/pulsemorph/agentic/common_player.py",
+      "bytes": 5018,
+      "sha256": "8d36972003bb40ff0a18da27a33f5d8f8652ca6fa7d3e308633aeab426d156ce"
+    },
+    {
+      "path": "src/pulsemorph/agentic/dance/assets_v1.py",
+      "bytes": 7374,
+      "sha256": "71d9962921d921b1de930984dd2a81ef7f1c161d047935ff27a13d04ccd17718"
+    },
+    {
+      "path": "src/pulsemorph/agentic/dance/manager_v1.py",
+      "bytes": 19451,
+      "sha256": "a01246e6def45e2a38539ed9c5c6712d817654a5870d3eb9db5a2ba769eaecbb"
+    },
+    {
+      "path": "src/pulsemorph/agentic/dance/manager_v2.py",
+      "bytes": 20261,
+      "sha256": "2a85b2d5e3f2df2666d47dd77eb85313b3b35c186aabf950d26035330a03a699"
+    },
+    {
+      "path": "src/pulsemorph/agentic/dance/music_v1.py",
+      "bytes": 3207,
+      "sha256": "68efb6b409726be12f74b1c13b3217b7a307ed0e201239a6ffe2db7a399cc574"
+    },
+    {
+      "path": "src/pulsemorph/agentic/dance/planner_v1.py",
+      "bytes": 9479,
+      "sha256": "efb3741993cd0cc0357ca07800504e542c0123213cd0abf68a28c856bf9eccec"
+    },
+    {
+      "path": "src/pulsemorph/agentic/dance/planner_v2.py",
+      "bytes": 10507,
+      "sha256": "85c459b42511adbb2cc105b99ba0d5e8e3f9b83a34e8d2d0f0dbad59aed293d4"
+    },
+    {
+      "path": "src/pulsemorph/agentic/dance/render_v1.py",
+      "bytes": 8725,
+      "sha256": "ab492abf7cb5b98579db63d5ce7917747b4b840908d0ede9ca53f3e1f30668ce"
+    },
+    {
+      "path": "src/pulsemorph/agentic/dance/render_v2.py",
+      "bytes": 10541,
+      "sha256": "a06cdf86041dfda1d67a1d238b21ba18c9ddc69b61e5514d83b6e02fb6771151"
+    },
+    {
+      "path": "src/pulsemorph/agentic/dance/runtime_v1.py",
+      "bytes": 15309,
+      "sha256": "7801f52d43498771a353e107d45257cc43fd5eb0d633ffeaa71ec662390f4c92"
+    },
+    {
+      "path": "src/pulsemorph/agentic/dance/server_v1.py",
+      "bytes": 7974,
+      "sha256": "e7744018e097b33cff12a1518ad2d0605326c3e2ad27e3dd1f86c30eaabb52c5"
+    },
+    {
+      "path": "src/pulsemorph/agentic/dance/server_v2.py",
+      "bytes": 2186,
+      "sha256": "c5e54590b3b0f7596c9ab9b10a1227359a0efc50c85f85c5c178a7eafd4b4f67"
+    },
+    {
+      "path": "src/pulsemorph/agentic/dance/server_v3.py",
+      "bytes": 2186,
+      "sha256": "cf3fa7583989353c012341283a3e1ac7fb104684947285cec5818b3860285aad"
+    },
+    {
+      "path": "src/pulsemorph/agentic/dance/web/app.js",
+      "bytes": 17752,
+      "sha256": "4fd0173b6e21b068ade7e9dcb0c8710852d42cbc79e575f5fc46f709c29a526e"
+    },
+    {
+      "path": "src/pulsemorph/agentic/dance/web/index.html",
+      "bytes": 5056,
+      "sha256": "a0cf7f53b3b3847d477ec6531f75b9d13e04a94a86af2fd2989407b9ca67d905"
+    },
+    {
+      "path": "src/pulsemorph/agentic/dance/web/style.css",
+      "bytes": 5040,
+      "sha256": "20c983bd84d29f8a5ca63504162f869ac0d50f600ad66fabf1c17f3f202ab439"
+    },
+    {
+      "path": "src/pulsemorph/agentic/dance/worker_v1.py",
+      "bytes": 40936,
+      "sha256": "5467bfebf834b7bf11abade9eb95ec1a350f0b29c66dfff28b7775f63d3c04d0"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/app/assets_v1.py",
+      "bytes": 5788,
+      "sha256": "574b64e13be2f5ccc275f1b99f4caf783c2ed8fd14b017c0669827b96041b88f"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/app/live_view_v1.py",
+      "bytes": 2214,
+      "sha256": "249e5607ee588a99ab97e88cf6f83896ff96b3b2c2e72013b08c6adaa5bed1af"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/app/manager_v1.py",
+      "bytes": 16266,
+      "sha256": "91f79a7a96266c5b73f877b4e0ba232ca2e86931c6d27e230ed6f325d1bcc47d"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/app/renderer_v1.py",
+      "bytes": 17009,
+      "sha256": "383e272cb4797d5570071bd1e88c0e90f328a0d631c786f67d2eaa47d8a8b6a4"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/app/renderer_v2.py",
+      "bytes": 17309,
+      "sha256": "3df244e345cb2ee1f344a679f03cfc4af67d164e5819f5e366ddb6e7d1201b80"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/app/server_v1.py",
+      "bytes": 4668,
+      "sha256": "41b10eacf09d4277f5f38ee6f350ad0b0ca9f75550dc84210c4a0cd5f85114bc"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/app/server_v2.py",
+      "bytes": 1002,
+      "sha256": "c80ebd1fc941ea07b3038974fce399a1f66d28074f656d993748f206abc21f26"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/app/server_v3.py",
+      "bytes": 1002,
+      "sha256": "a73a12277951a32aeaa94e94bc281381cedd3dd353e8d6c787b66a131a4e202b"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/app/server_v4.py",
+      "bytes": 1002,
+      "sha256": "5f0c3ac79aa176a476a1a63075bdba9e11b0ab897576328deac67d5e92edd237"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/app/web/app.js",
+      "bytes": 11014,
+      "sha256": "1799e865ba3a3fada43d7305500650db6bb12b5fdd2352f662bd70fb77db75cf"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/app/web/index.html",
+      "bytes": 4784,
+      "sha256": "999d802c6cfc36af8d29a9935f1091efb96dfdbc66ff9969bd320388d289ccbb"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/app/web/style.css",
+      "bytes": 6428,
+      "sha256": "0d241c62ee9f4c7ae690246c2cdcb470ca3aeeddb86011fe79396342628d3af5"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/app/worker_v1.py",
+      "bytes": 19279,
+      "sha256": "7d9213f6df7cc8ed46a646c4612a30d622b394dc8ec0a637df20fae920dc63b7"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/app/worker_v2.py",
+      "bytes": 22874,
+      "sha256": "7816c3f6d9e52894315c0c4deb11d2a9020be9c42e4e9d1aca510cd182dd0efb"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/app/worker_v3.py",
+      "bytes": 22874,
+      "sha256": "addbb8c7d93c10afae2f2695468dabae109217ba44fe6466ada71326893155f2"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/app/worker_v4.py",
+      "bytes": 22880,
+      "sha256": "8333cd86a3a03aeb04f3d7d5374d6394e165af9b24bbbc353fe21c8859295931"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/backend_v1.py",
+      "bytes": 13438,
+      "sha256": "e910850ac230e7fd29de95387f67007c0714fafb74c6d2b857bfbe87e8322856"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/fork_v1.py",
+      "bytes": 13083,
+      "sha256": "cd8cd3052cce42ab92968c8f428a7211c4a09ac3328fd20c0a89ef41964c2c09"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/hybrid_arm_backend_v1.py",
+      "bytes": 12059,
+      "sha256": "3f44895b0b511eb70a0bc14fccc21cc13044b204d889e8b13531a9d12c71732a"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/orchestrator_v1.py",
+      "bytes": 16098,
+      "sha256": "4f0739b29d42bc0b64b5ee8e22c823140583ddba2acdeb5567061801013750e4"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/preview_orchestrator_v1.py",
+      "bytes": 17800,
+      "sha256": "a961c47fd8d4f478da9f7d0d9030ebc4f303a92cd26ab0cb08034253d72eab0c"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/preview_provider_v1.py",
+      "bytes": 5680,
+      "sha256": "3b30662e89ecb52b75c2b1ffcee2619f051d808ce28dc8c3ebf4e6a376b68696"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/provider_v1.py",
+      "bytes": 5370,
+      "sha256": "5e9adb1a09692674106acefbdba9231f7ffa39662f2313a31681f0e09732d323"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/reference_v1.py",
+      "bytes": 2708,
+      "sha256": "d78bfad1f1b59ec698f1bc3ed47cfc9bca09e158b6e5107459efb52824ea4aef"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/runtime_v1.py",
+      "bytes": 11674,
+      "sha256": "7dfd1c0e17b9ce2eabad027d756c43f3ba42b2202c2ff25845820e8000406c4d"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/tasks_dual_v1.py",
+      "bytes": 4443,
+      "sha256": "7a4fbda808006e506cbf054489a7286e187900724b1302df3d6b6341d4558d89"
+    },
+    {
+      "path": "src/pulsemorph/agentic/embodied/tasks_v1.py",
+      "bytes": 6041,
+      "sha256": "978a3b1289fac87801950e66995205e6fb362208b316a7b8f189c2e7e3e5bffa"
+    },
+    {
+      "path": "src/pulsemorph/agentic/expression/__init__.py",
+      "bytes": 80,
+      "sha256": "5759b1183a2e1ec9df2b4d9596d14adc3128beaec5f36c0df573dc0521a224c8"
+    },
+    {
+      "path": "src/pulsemorph/agentic/expression/goals_v1.py",
+      "bytes": 12242,
+      "sha256": "46b97a7a1297183a0f840b130ddcdab57855d15c60a9c8162af7b1319da1e336"
+    },
+    {
+      "path": "src/pulsemorph/agentic/expression/planner_v1.py",
+      "bytes": 17512,
+      "sha256": "59cf32e6aa338ad013a341059b47eb44aab6d7d5414f2e92697aea98c0a5bd32"
+    },
+    {
+      "path": "src/pulsemorph/agentic/expression/planner_v2.py",
+      "bytes": 18231,
+      "sha256": "3eb6be1029e63577ee039833fbb3adf9b079317d640477219b8795a5e82ab9f9"
+    },
+    {
+      "path": "src/pulsemorph/agentic/expression/player_v1.py",
+      "bytes": 2318,
+      "sha256": "19a0f6876557d996634b4254c42e954b1a327b1167436e31900716e455cf7d42"
+    },
+    {
+      "path": "src/pulsemorph/agentic/expression/render_v1.py",
+      "bytes": 7369,
+      "sha256": "fb0f5e7224a22c983b2554cf34a4d0682cabf53f4bc424170dc605292400a5cf"
+    },
+    {
+      "path": "src/pulsemorph/agentic/expression/runner_v1.py",
+      "bytes": 29388,
+      "sha256": "617f142b3cce0ec93e57327bf7fb28edf412da5cd298cf917b05b447155fad59"
+    },
+    {
+      "path": "src/pulsemorph/agentic/expression/runner_v2.py",
+      "bytes": 29388,
+      "sha256": "c52a13df0dd7bee572e263be16a701048e93b1e29d040d73a626790e55448f7e"
+    },
+    {
+      "path": "src/pulsemorph/agentic/expression/runner_v3.py",
+      "bytes": 30850,
+      "sha256": "97c07427c82f7416743e3bc6f49979d32f8e34416832df32c552d8ab18075d70"
+    },
+    {
+      "path": "src/pulsemorph/agentic/expression/runtime_v1.py",
+      "bytes": 15657,
+      "sha256": "d803da4f1b26ac86fe4bac5ffbb305fa9f3ec1b20cf701fcb4f3247d1eacf6e5"
+    },
+    {
+      "path": "src/pulsemorph/agentic/expression/server_v1.py",
+      "bytes": 8408,
+      "sha256": "1abf987c639191afb140c1f1f3a055909886247d8c8494670d401aa531f901b7"
+    },
+    {
+      "path": "src/pulsemorph/agentic/expression/server_v2.py",
+      "bytes": 1322,
+      "sha256": "7e189408874ed8c2b4cda5474416aadcb1f4fc0e0080f3377c5fc3c2936128f6"
+    },
+    {
+      "path": "src/pulsemorph/agentic/expression/server_v3.py",
+      "bytes": 5176,
+      "sha256": "557fe59b6b575503f90381d244c5258f1a56bc60113e71e826d534a2cf8d28eb"
+    },
+    {
+      "path": "src/pulsemorph/agentic/expression/web/app.js",
+      "bytes": 15017,
+      "sha256": "c6df5ecf1e67c4379699290b4531305efe316094a0ae02314c2bbf2cf1e4d6d8"
+    },
+    {
+      "path": "src/pulsemorph/agentic/expression/web/index.html",
+      "bytes": 5621,
+      "sha256": "3b0d9baba2f568f2d3b1bd61a6525ec13bcc46c6a5d9d1cde48391eaa3dabad0"
+    },
+    {
+      "path": "src/pulsemorph/agentic/expression/web/style.css",
+      "bytes": 5711,
+      "sha256": "6f2f85dfa7e41ed94df95b22096cb6d8f10be03d4fcc3b4a754efd46fdb4feeb"
+    },
+    {
+      "path": "src/pulsemorph/agentic/expression/web_v3/app.js",
+      "bytes": 19649,
+      "sha256": "f2760c3c2a755a57431f37b25d025e77eed0e191a85abb46249eac6a5f135b50"
+    },
+    {
+      "path": "src/pulsemorph/agentic/expression/web_v3/index.html",
+      "bytes": 6880,
+      "sha256": "a922c6161e48b66266c08c805e6cb37f0d683a34b37a039e4a9e528b06158123"
+    },
+    {
+      "path": "src/pulsemorph/agentic/expression/web_v3/style.css",
+      "bytes": 6243,
+      "sha256": "20e8ffbc0d0c2e73d146dbb8f3584e2165cbc3769dbb8440fc95af9c7bec205b"
+    },
+    {
+      "path": "src/pulsemorph/agentic/expression/worker_v1.py",
+      "bytes": 16463,
+      "sha256": "e1188edfe939f65db5992ec0b4cd134b12396f17c9d6ed7a7abd3b9bf1e95979"
+    },
+    {
+      "path": "src/pulsemorph/agentic/local_multifeature_reference.py",
+      "bytes": 2944,
+      "sha256": "ce494009c5b0a783a7f91c2a2741fd6312f5d560483a55c0081b42dc96c29eaa"
+    },
+    {
+      "path": "src/pulsemorph/agentic/multifeature_reference.py",
+      "bytes": 6755,
+      "sha256": "3fce10070c3e97efbffde863702083e2a8fca7e7f8ec5980078a35b355db4a9f"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/app/manager_v1.py",
+      "bytes": 14608,
+      "sha256": "2c98a99f60cac9466d7ed01abb41f3666bc8945d8831db9f7138b6a754e687d6"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/app/server_v1.py",
+      "bytes": 4152,
+      "sha256": "6e0e0872f270adf15ee75807767e156ae4d422cbd68806ae86c770940aa555aa"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/app/web/app.js",
+      "bytes": 12174,
+      "sha256": "747be9601bf5645517e4b278168aac47489378a7b77087bb2f84a7e0821cdccb"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/app/web/index.html",
+      "bytes": 4914,
+      "sha256": "a198a233faacd3b6b842cac4545fb0a6db7893324486b3ea3f21d0bdbc56e8bf"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/app/web/style.css",
+      "bytes": 6537,
+      "sha256": "34a64d739e9f7a9128fce7115f85158686d79d736919f36523550bd5e783c162"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/app/worker_v1.py",
+      "bytes": 14659,
+      "sha256": "cda21f4447b09a9a81ef1f27517f9b6b9facb58c8caceaf284158d42c264ee8a"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/backend_v1.py",
+      "bytes": 5465,
+      "sha256": "d94c67333106acf86fc064faae9bfc59e99091b3da80982c0e2cf2950126a14a"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/backend_v2.py",
+      "bytes": 7323,
+      "sha256": "31063891069613fd7c5c8368179c054b6d9c7557de6074b0355e2d0ae54296ab"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/backend_v3.py",
+      "bytes": 6053,
+      "sha256": "2a0572097ab5e5635e7f4f21e7a4175f2c10bc9f25bdbb03bfabf8100f8ceb1c"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/backend_v4.py",
+      "bytes": 9313,
+      "sha256": "84db15fb5a78ad58e49fc8d1f682ae4b5d1d966cfadd6f6084fe354ece611882"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/backend_v5.py",
+      "bytes": 7358,
+      "sha256": "880ca7450f59863490e186f11a9472e68e6918e0925c6cede41951f8f4b20f3f"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/backend_v6.py",
+      "bytes": 11128,
+      "sha256": "be52108b2418d632a908956504606240f2cf70d3437357c87c990954f85c56bc"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/backend_v7.py",
+      "bytes": 12412,
+      "sha256": "00e4c598ce84ec7ab1db95571bf9243bd9b9d971dc1738a848511062d8171437"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/backend_v8.py",
+      "bytes": 12412,
+      "sha256": "e76243485b0237a0446be98060a08385c0f810cdc14cf5488e08420979b196e9"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/choreography_v1.py",
+      "bytes": 9465,
+      "sha256": "3517e949c2147a592ebcd4f1832f23133707a8fbde5f8a9d50230ab18eaa7189"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/evaluation_v1.py",
+      "bytes": 13709,
+      "sha256": "5757d9147445cc3cc27d2366495753f46828c2d7e08497810beddfbbaaef10d9"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/evaluation_v2.py",
+      "bytes": 3552,
+      "sha256": "b05ec1f9a8df1e6b3c42431fd2c81f7bb534f36b0716dd8aabecd684cbea6295"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/music_v1.py",
+      "bytes": 4563,
+      "sha256": "9461b16f488df929b834cfa72b7595afbddaf268cb5f132e00c0a1e5b06f9b55"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/nemotron_openrouter_v1.py",
+      "bytes": 6330,
+      "sha256": "77be734da451c42f17b9573db82b93165cdcfcda9ddd8a77a45c7332dc867cf2"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/nemotron_v1.py",
+      "bytes": 5797,
+      "sha256": "ba7c0398e86b86b8f79ed27c994be8c4ea9911dc4544df5bd6f1352f4d6252cc"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/orchestrator_v1.py",
+      "bytes": 11333,
+      "sha256": "7a0723a2a5651e25bc13a30fd46097bb08cc197734153960171518c48024fc35"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/provider_v1.py",
+      "bytes": 6038,
+      "sha256": "ba58771f9ce0350614c8575674160c3931e1a42d642b553ef8f0af7d47aa7f06"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/render_v1.py",
+      "bytes": 12227,
+      "sha256": "40b1b0959bd5f22aeb7c48df130b60b581c650e01b8fb5599a663f95812b0c3e"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/review_server_v1.py",
+      "bytes": 7243,
+      "sha256": "1aee28b3c2cc6afa705111b2a99d2489724560ccda1780ed1ecf673684746fff"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/review_web/app.js",
+      "bytes": 2223,
+      "sha256": "250f512ee5e2f8af41fdf685fa28d98d25b142c78c0ee0328041e1abea048082"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/review_web/index.html",
+      "bytes": 3052,
+      "sha256": "455f099259a7e5da47beb28cc3646feb05c3138f83a54975e1928a95262ad63b"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/review_web/style.css",
+      "bytes": 2903,
+      "sha256": "85b5e2b976cf2074794d73c35df271dcebe0446633c41246aae5a2eda24843e1"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/runtime_v1.py",
+      "bytes": 17936,
+      "sha256": "0cc31d6a75ad4c520e40bc85aad04bb7b93f9d9bfe328d7d8ce614d9e01f6639"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/stance_ik_v1.py",
+      "bytes": 4805,
+      "sha256": "da25bf1053fbfe475d1f1309818d231134825605b4bba7ffb6bef63ee4176379"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/wholebody_qp_v1.py",
+      "bytes": 5837,
+      "sha256": "d8159bccd0386245d3e15b69b672d183a398111eb21a4fa1b857105903c57ca0"
+    },
+    {
+      "path": "src/pulsemorph/agentic/performance/wholebody_qp_v2.py",
+      "bytes": 6114,
+      "sha256": "65d97f396a04256374bb893d423b87d6163b37208172a42f31ff35e05dbd4212"
+    },
+    {
+      "path": "src/pulsemorph/agentic/phrase_expression_v1.py",
+      "bytes": 12247,
+      "sha256": "e0e77175df4361d7725fa40a9d9ad3b80c0a68ac0484f79234d5d29c02229cdf"
+    },
+    {
+      "path": "src/pulsemorph/agentic/phrase_planner.py",
+      "bytes": 11054,
+      "sha256": "97a010932d454704d706c9eb73886e52c3bf24b6faca69349a1b5206c373261b"
+    },
+    {
+      "path": "src/pulsemorph/agentic/phrase_program.py",
+      "bytes": 11886,
+      "sha256": "554499a1a84b2825c2d43c2ab4c47336989e87e7612b8efde0c586db8e8bc9b8"
+    },
+    {
+      "path": "src/pulsemorph/agentic/phrase_reference.py",
+      "bytes": 4250,
+      "sha256": "ed6b4928bc0934b51264875338013158cdb10eee683b0498fcc35ddf39e09671"
+    },
+    {
+      "path": "src/pulsemorph/agentic/phrase_reference_v2.py",
+      "bytes": 3714,
+      "sha256": "cb90c1622b8bad64aee40d1aab893570e4037c5bd8c5029bcd8e8e4a7f62ed2b"
+    },
+    {
+      "path": "src/pulsemorph/agentic/reference.py",
+      "bytes": 7911,
+      "sha256": "42430ece15aad0323fcb53de2a9f0c977f87fb9e33daf23d85674d7326e5c8b0"
+    },
+    {
+      "path": "src/pulsemorph/agentic/wide_clock_reference.py",
+      "bytes": 6707,
+      "sha256": "c0cf482d9602ecfc63d29c00217a0c42ee22f5f0799c0767db4a82b3fdd7c34d"
+    },
+    {
+      "path": "src/pulsemorph/evidence.py",
+      "bytes": 2923,
+      "sha256": "7201273054f1f75bf960670854258c761744f98c3b489ebf816b51aa286e30c4"
+    },
+    {
+      "path": "src/pulsemorph/motion/__init__.py",
+      "bytes": 182,
+      "sha256": "3e1cf2d7aaf1001d1b4b9830e80f91cc001589897297be0ec186960d17a6a260"
+    },
+    {
+      "path": "src/pulsemorph/motion/contracts.py",
+      "bytes": 10421,
+      "sha256": "2534cebcb231069e5f7cd9581ef2e6540c17da231df107a299f14f93ba002769"
+    },
+    {
+      "path": "src/pulsemorph/motion/g1.py",
+      "bytes": 10183,
+      "sha256": "adbf7fd4bef987afa3f9ab068cbd52ea737bb3a3413e2800745fbab75e3fa786"
+    },
+    {
+      "path": "tests/test_agentic_app_audit_jobs.py",
+      "bytes": 6135,
+      "sha256": "f1ac41d657d62d5586470b24f75c7bab581fc097190e2dfc89ee20d62f502965"
+    },
+    {
+      "path": "tests/test_agentic_app_exports.py",
+      "bytes": 11066,
+      "sha256": "a04d914ca164f7a88a28adb1eec9cfeb2744110ab8ebe438cf56b1e9d1476026"
+    },
+    {
+      "path": "tests/test_agentic_app_integrations.py",
+      "bytes": 13522,
+      "sha256": "16df1582b9af723ea37595fc53eed5d05295570df1f6fb6ed61617dc6fd94da2"
+    },
+    {
+      "path": "tests/test_agentic_app_music.py",
+      "bytes": 3747,
+      "sha256": "52f906826ecdf8903cbf11b3777f4228ae6d02dce124cc8b1e485b1f3e286a8a"
+    },
+    {
+      "path": "tests/test_agentic_app_orchestrator.py",
+      "bytes": 23083,
+      "sha256": "39979f5cdf9177aae5fbcbe469db8c7a3c4e8147adb423d8a391f70c27c546a4"
+    },
+    {
+      "path": "tests/test_agentic_app_phrase_advice_http.py",
+      "bytes": 3783,
+      "sha256": "127a5a69472a535672abc54ce4c6925ef44b1b04576101f4ea67011ba35f3e99"
+    },
+    {
+      "path": "tests/test_agentic_app_phrase_advice_manager.py",
+      "bytes": 8869,
+      "sha256": "63e5b95d4fd84594a5b8f73832b3d6cd4f3149e3f694f915cec2a28bebeaba63"
+    },
+    {
+      "path": "tests/test_agentic_app_phrase_descriptor_app.py",
+      "bytes": 7196,
+      "sha256": "ec39734d6fed5547239588fb836b71fd554bf79a0d3821b3ad093f4a757a71f4"
+    },
+    {
+      "path": "tests/test_agentic_app_phrase_entrypoint.py",
+      "bytes": 3318,
+      "sha256": "eb184fe384c1ab336a91a48925cf121ebd85ea9fe3b847ece6e738284c183261"
+    },
+    {
+      "path": "tests/test_agentic_app_phrase_export_http.py",
+      "bytes": 4406,
+      "sha256": "aca20669402e835a1874c5c2416407ea5cb9275cf80a9fe389da75e908c3d649"
+    },
+    {
+      "path": "tests/test_agentic_app_phrase_exports.py",
+      "bytes": 5259,
+      "sha256": "4da21e59d6900825c775837e5b70632c07b1295398a7875a6ddf090d872dabbc"
+    },
+    {
+      "path": "tests/test_agentic_app_phrase_gain_advice.py",
+      "bytes": 4374,
+      "sha256": "ce2492f8437cad1c92c13df8e5e70e8ed397066bb4175734cdfe0812cc7f1282"
+    },
+    {
+      "path": "tests/test_agentic_app_phrase_goals.py",
+      "bytes": 11603,
+      "sha256": "f186568803c97705fc59f2b52d245cbcd4612e2fddbd03b139cbcadad7a4d09c"
+    },
+    {
+      "path": "tests/test_agentic_app_phrase_goals_http.py",
+      "bytes": 6000,
+      "sha256": "2cbe6da3802649aa3e8d6ed5c4cda214dc52834cf40408f0462d5091c315ef76"
+    },
+    {
+      "path": "tests/test_agentic_app_phrase_manager.py",
+      "bytes": 11530,
+      "sha256": "4e10d4ccb8bfeef8edc7c032813e36db3392338c47d15999d4f29ca4d0de1f9b"
+    },
+    {
+      "path": "tests/test_agentic_app_phrase_motor_response.py",
+      "bytes": 3446,
+      "sha256": "05dbd5c1aefcf049ac3629f0826d8fcec819c5bdf6f2a18c2752fb12f5ea7835"
+    },
+    {
+      "path": "tests/test_agentic_app_phrase_music.py",
+      "bytes": 3673,
+      "sha256": "24291f938de2defe8570f5761158f48cf6bca6d2c0b99b0ea3a2b779a830d41b"
+    },
+    {
+      "path": "tests/test_agentic_app_phrase_renderer.py",
+      "bytes": 3917,
+      "sha256": "335bf73de2b62fc07989d0cfc8132449a2885d07cb8b0e0c5c6432f84fb02093"
+    },
+    {
+      "path": "tests/test_agentic_app_phrase_response_evidence.py",
+      "bytes": 7912,
+      "sha256": "1810ffd76933f23c7c1819cffbc2413a0eab73605d354caab0d5d3b7a2b80358"
+    },
+    {
+      "path": "tests/test_agentic_app_phrase_response_http.py",
+      "bytes": 3828,
+      "sha256": "a987a020b01fd45b6f57e76ab01ea988c25ba31944d669c64d6a715ed2367cc0"
+    },
+    {
+      "path": "tests/test_agentic_app_phrase_response_snapshot.py",
+      "bytes": 9054,
+      "sha256": "9b3bee189a13d816b7ead85f76d6ae06e0ff1021024a1bdd2791c47f935359ee"
+    },
+    {
+      "path": "tests/test_agentic_app_phrase_runtime.py",
+      "bytes": 13690,
+      "sha256": "3bfb06c55fadca092c57f569dc8dd5abca9f9c2edb1733e70b76ca063b99c77e"
+    },
+    {
+      "path": "tests/test_agentic_app_phrase_server.py",
+      "bytes": 6147,
+      "sha256": "bee4c0b2564d4a4bd46b2ae08bf400bb6fa5166eccd09bfcd1c04879bd3edca9"
+    },
+    {
+      "path": "tests/test_agentic_app_phrase_snapshot_http.py",
+      "bytes": 3315,
+      "sha256": "a719343d6cec44e39c80d5dac4d6a7ca7a1e5661f68db5a18f107a89b6cc4806"
+    },
+    {
+      "path": "tests/test_agentic_app_phrase_source_descriptor.py",
+      "bytes": 3784,
+      "sha256": "5891645c5106d328b1dbd6d7cc38a1004fad15e62d13e60d8039d2cec02b8094"
+    },
+    {
+      "path": "tests/test_agentic_app_preflight.py",
+      "bytes": 6562,
+      "sha256": "220ba34b276f27c851c7d8e642dd3499d9d9c0d7a00eac1b568359983450b191"
+    },
+    {
+      "path": "tests/test_agentic_app_providers.py",
+      "bytes": 2914,
+      "sha256": "f8fcc95115014967d129c50409555c55b166f276cd2d16120e306c92a85f0c51"
+    },
+    {
+      "path": "tests/test_agentic_app_renderer.py",
+      "bytes": 3618,
+      "sha256": "7b16632b97752481b6e5c5c9dba7f435734241c5be3f436e85738e77ea04a159"
+    },
+    {
+      "path": "tests/test_agentic_app_runtime.py",
+      "bytes": 1957,
+      "sha256": "b768f4297cb542e4ce62c04b714e0b58af3c57f408c45e61556d940509f145c6"
+    },
+    {
+      "path": "tests/test_agentic_app_runtime_config.py",
+      "bytes": 5327,
+      "sha256": "8032c4b98f214917185ac5b9c6203cc805c00ce21ea5d6263f379ffb4307cfb9"
+    },
+    {
+      "path": "tests/test_agentic_app_server.py",
+      "bytes": 13108,
+      "sha256": "e641f3d799fc37aa4af80b689762a7e0e3830c1ac0252bc7459b55b63c2fc7d7"
+    },
+    {
+      "path": "tests/test_agentic_app_uploaded_audit.py",
+      "bytes": 3477,
+      "sha256": "a8a9682f90a9454c6a2acc75d60c3833427cfc2f608a37d3db3205a59bce1e7d"
+    },
+    {
+      "path": "tests/test_agentic_app_uploads.py",
+      "bytes": 10953,
+      "sha256": "f70e47ebb0950dc648e87b63a0dff711cc62c365f5290a4c743c952b91d832bb"
+    },
+    {
+      "path": "tests/test_agentic_app_walk_probe.py",
+      "bytes": 4033,
+      "sha256": "d3b89ecaf447f96886085751379ca2c602c4158677bfedd2a32e3deb500d8f74"
+    },
+    {
+      "path": "tests/test_agentic_body_agent_render.py",
+      "bytes": 2219,
+      "sha256": "f5aaf527aa2052048343029dd77dba6f5804ecd766aff87fe6aff3d666819510"
+    },
+    {
+      "path": "tests/test_agentic_body_agent_render_v2.py",
+      "bytes": 1689,
+      "sha256": "da9c783e3e6d651c9881a3926312b4679dbe3b13575e620dac02170bdceab066"
+    },
+    {
+      "path": "tests/test_agentic_body_app.py",
+      "bytes": 8149,
+      "sha256": "af4f3d2cc142775a29f617eac0da8681360553fb5d0e7b2592cb595dddf0b691"
+    },
+    {
+      "path": "tests/test_agentic_body_server_v2.py",
+      "bytes": 950,
+      "sha256": "05a725d1b567375942d8816659023621e6c5fa65df01edca115b7de6c4aa6219"
+    },
+    {
+      "path": "tests/test_agentic_body_server_v3.py",
+      "bytes": 918,
+      "sha256": "4c1506435e401539c97fe1744589f3e688e84dc0133e59599a8cfb24519c58f9"
+    },
+    {
+      "path": "tests/test_agentic_body_server_v4.py",
+      "bytes": 2105,
+      "sha256": "8d4d1211a30fe5f0c9377319174221b4f4aa220cb7afbfbddfb6a57b2ffa1abe"
+    },
+    {
+      "path": "tests/test_agentic_capability_audit.py",
+      "bytes": 3087,
+      "sha256": "b0e5eaec979086fd213d8a8fe91274183445e895af9c7bdb181d17e0989c700f"
+    },
+    {
+      "path": "tests/test_agentic_capability_search.py",
+      "bytes": 3954,
+      "sha256": "0707a959d1ca14a3380074d557483e7da35fbefb8415a5063686f78e2e0dfe16"
+    },
+    {
+      "path": "tests/test_agentic_capability_workflow.py",
+      "bytes": 5731,
+      "sha256": "ec3c538e3ec1eab9fddeaddf5309566b7cf5ff45c6253391dea97f02ac2f8c2b"
+    },
+    {
+      "path": "tests/test_agentic_common_player.py",
+      "bytes": 4329,
+      "sha256": "4fd708c112748b9246f2328dfd1f6434c84cc2374eb50d8f73bd84fc46ae652e"
+    },
+    {
+      "path": "tests/test_agentic_dance_manager.py",
+      "bytes": 8358,
+      "sha256": "9794e1d265b062a30aecabfe966358cf6cb4f8cdbd034a6b18aaa5d014d2b7b2"
+    },
+    {
+      "path": "tests/test_agentic_dance_planner.py",
+      "bytes": 3734,
+      "sha256": "d170c87834fe954b853382133d0dd9aa036f208bd4d04d9ffc7daba2e154092e"
+    },
+    {
+      "path": "tests/test_agentic_dance_render.py",
+      "bytes": 6254,
+      "sha256": "9481362b7b5d681dfbd5f44db221959ca5b7da45f505ca42f3ac4b47233082a5"
+    },
+    {
+      "path": "tests/test_agentic_dance_render_v2.py",
+      "bytes": 3141,
+      "sha256": "550f4d599dafc77a6b76b86db81271c66bd33b0b4e0c222bd2500cfce6d93670"
+    },
+    {
+      "path": "tests/test_agentic_dance_revision_v3.py",
+      "bytes": 2397,
+      "sha256": "3d226f6d784eb7317339b629224d17343eb7cfb9e06c6a749e4a0057f5dbccc6"
+    },
+    {
+      "path": "tests/test_agentic_dance_runtime.py",
+      "bytes": 6470,
+      "sha256": "000ca15d81002af4ad13882407fd172b6f1088c05276abdccf6fa057dff72a8f"
+    },
+    {
+      "path": "tests/test_agentic_dance_server.py",
+      "bytes": 3929,
+      "sha256": "6080610bebb36392d1259713c205c2cd8f13e292e083cee0f6c9a9b24b7c62b1"
+    },
+    {
+      "path": "tests/test_agentic_embodied_app_media_v4.py",
+      "bytes": 1069,
+      "sha256": "5d07c5f486ca093680dc083ced3b52f689ddf387fd7d7333b2aedac732e76dce"
+    },
+    {
+      "path": "tests/test_agentic_embodied_app_worker.py",
+      "bytes": 4305,
+      "sha256": "82568abe21ebfbb8816daff41f5f894a45bbd53c06eb13e2333921a59292e746"
+    },
+    {
+      "path": "tests/test_agentic_embodied_app_worker_v2.py",
+      "bytes": 4235,
+      "sha256": "1d22cb69a71eb9434ffa28f632a0cfaadbded60ea05613cfb325332c85c5e6fa"
+    },
+    {
+      "path": "tests/test_agentic_embodied_audit.py",
+      "bytes": 2768,
+      "sha256": "849e8196f6394007731880dc15b7da66097c4d7144047abfde3db5e98bfbb895"
+    },
+    {
+      "path": "tests/test_agentic_embodied_dual_tasks.py",
+      "bytes": 3978,
+      "sha256": "eaa3f9b74b382248100079d0457e2414570ad55050192fe3573ae87a3f380ed3"
+    },
+    {
+      "path": "tests/test_agentic_embodied_fork.py",
+      "bytes": 7443,
+      "sha256": "a51acdd28792958ca9c6d88666bcc18b8ec8eabc1553842123744bfc2d58bb7a"
+    },
+    {
+      "path": "tests/test_agentic_embodied_goal_audit.py",
+      "bytes": 1465,
+      "sha256": "86ecd5ab7dd0d1b3bdc23110d8a9928c1dda3bf9001b80f4fed423f605e26d32"
+    },
+    {
+      "path": "tests/test_agentic_embodied_hybrid_arm.py",
+      "bytes": 2749,
+      "sha256": "f43c5dde4965ba4d5fdc3ca188fc3b516e467a4c1fbe7e57f5c13eb68e4cb9b7"
+    },
+    {
+      "path": "tests/test_agentic_embodied_hybrid_audit.py",
+      "bytes": 3925,
+      "sha256": "e2f2deaf8ae6d7ded68fd8439244f4d3083c0f0bc14ce9c0db6eb7846654babc"
+    },
+    {
+      "path": "tests/test_agentic_embodied_orchestrator.py",
+      "bytes": 8760,
+      "sha256": "960d858c69256d80fc0b25f0ea280b2b0167e5591d96bb63f21bd912970f54ba"
+    },
+    {
+      "path": "tests/test_agentic_embodied_preview.py",
+      "bytes": 7904,
+      "sha256": "c30e4dae70f52aa2ba15cd23cccee5af80eb40f9aaf5475739e4ef3e919ab0a7"
+    },
+    {
+      "path": "tests/test_agentic_embodied_render.py",
+      "bytes": 2001,
+      "sha256": "cee45113ae4581a9445edb7a27de307549472416076a68cc036bdc35523e4eda"
+    },
+    {
+      "path": "tests/test_agentic_embodied_render_v2.py",
+      "bytes": 3648,
+      "sha256": "3a9e489f8a88982c3638aa0a6f9bff196b2c7e4b0ca5fef9016e72405a774f6d"
+    },
+    {
+      "path": "tests/test_agentic_embodied_render_v3.py",
+      "bytes": 1355,
+      "sha256": "efdb85e8a64737532a27412c8190eb76c1956e384d0d65bb24b7a8f9ddae96c6"
+    },
+    {
+      "path": "tests/test_agentic_embodied_runtime.py",
+      "bytes": 5772,
+      "sha256": "a50a51d409d6a56ad3e6d9696fda4736c2a35a326265dd948dd096752f38c6ee"
+    },
+    {
+      "path": "tests/test_agentic_embodied_tasks.py",
+      "bytes": 4033,
+      "sha256": "1328f95f5e280c087d6169c76e72978a52009812ddb1b3dc105fdf3bc2a2c5dd"
+    },
+    {
+      "path": "tests/test_agentic_evaluation.py",
+      "bytes": 9191,
+      "sha256": "6749e5523fb12d700395d97a323f715c4fd0c0c87183da976711af6285f8132a"
+    },
+    {
+      "path": "tests/test_agentic_expression_adapter.py",
+      "bytes": 10244,
+      "sha256": "55277885631fb2d0ac67a8a21c0f1cb9db3a63e18956b15809488a83d2bd8fa2"
+    },
+    {
+      "path": "tests/test_agentic_expression_goals.py",
+      "bytes": 9467,
+      "sha256": "6d4e57ab12726f6cc695be9d08a0a4b26ebbb80ea552e01a409f87e06dd78a8a"
+    },
+    {
+      "path": "tests/test_agentic_expression_music_v3.py",
+      "bytes": 5445,
+      "sha256": "ae97b0abde246694a49aaf2cba202bede572d21adce99abb08ec783707608d81"
+    },
+    {
+      "path": "tests/test_agentic_expression_planner.py",
+      "bytes": 11187,
+      "sha256": "fa5d7bf61daaa305779b98d39ec384ea703d02a18bff6a6020665a5cbad3368a"
+    },
+    {
+      "path": "tests/test_agentic_expression_planner_v2.py",
+      "bytes": 5453,
+      "sha256": "d452d7e7fef9ca3cbdedba44eac12a3a5deb7ab21f657997df78f486d63ab7c5"
+    },
+    {
+      "path": "tests/test_agentic_expression_render.py",
+      "bytes": 2637,
+      "sha256": "a69286e5c4ae0d225ae3087b867ab0a47b67562cea859c0397fa340e56a73a52"
+    },
+    {
+      "path": "tests/test_agentic_expression_runner.py",
+      "bytes": 8930,
+      "sha256": "6c9a70d4b5570768e5024b1072a47e90e58dac5ac386b75f9ca34279193f5613"
+    },
+    {
+      "path": "tests/test_agentic_expression_server.py",
+      "bytes": 3271,
+      "sha256": "1068e4e6f00746ef532ec8a87517030f090cfa06ea47c39ff2264be2c2bfaa2a"
+    },
+    {
+      "path": "tests/test_agentic_future_joint_metadata.py",
+      "bytes": 1809,
+      "sha256": "aad577554f8a1c6b394d2474fc9bf2f422770a645713c16eaf216971457aa5e8"
+    },
+    {
+      "path": "tests/test_agentic_future_joint_probe.py",
+      "bytes": 3623,
+      "sha256": "a76ec9f9f1c845b03c1cc7eb9be9b0f16826fcaf855fdb9775e49e74938e403a"
+    },
+    {
+      "path": "tests/test_agentic_generalization_audit.py",
+      "bytes": 6889,
+      "sha256": "99dfbef4105edb7012902b3c1097c2c700f464dda71671f3d9068c49445ba938"
+    },
+    {
+      "path": "tests/test_agentic_generalization_runtime.py",
+      "bytes": 7215,
+      "sha256": "9b9d8c428f13ec2f6641b4a4e7b495e9425af9c552682cd5a3d35d18e80a6dc7"
+    },
+    {
+      "path": "tests/test_agentic_generalization_search.py",
+      "bytes": 3649,
+      "sha256": "f56ed630bac894fd5f39ab36c094a0472538d2bafd984a48625a166b61ba2b5c"
+    },
+    {
+      "path": "tests/test_agentic_generalization_workflow.py",
+      "bytes": 4767,
+      "sha256": "161c119491e6915834859eb258cc1c90fd279893e475d59332ae3ebe543fb800"
+    },
+    {
+      "path": "tests/test_agentic_local_capability_audit.py",
+      "bytes": 4665,
+      "sha256": "b484452a23b829b16917a212edae9c30decdb17dbc61ee05b6852c7789faa623"
+    },
+    {
+      "path": "tests/test_agentic_local_capability_workflow.py",
+      "bytes": 8174,
+      "sha256": "7f98ecc8ef1f3602c6bc17cb206de0b7495372961a8295585b00e60c77fa0d53"
+    },
+    {
+      "path": "tests/test_agentic_local_multifeature_reference.py",
+      "bytes": 4528,
+      "sha256": "1678aecb2bb26853ddfe0a3882bd21dedc4525af76b819d0c115c60f05ded19f"
+    },
+    {
+      "path": "tests/test_agentic_multifeature_evaluation.py",
+      "bytes": 7405,
+      "sha256": "73e60ccebe87d47c92a868c0ddbe8b33fd6555099928f276a66d91f2f86e9a31"
+    },
+    {
+      "path": "tests/test_agentic_multifeature_reference.py",
+      "bytes": 5288,
+      "sha256": "c0e8d4501826c9216ca802fbd62f95aeb2bc3063f493472ced4a0a424dcdc870"
+    },
+    {
+      "path": "tests/test_agentic_multifeature_workflow.py",
+      "bytes": 10339,
+      "sha256": "51bc7e61467e88cf6a53fb26c47a4feb8c84e886b2d4fea5ae04aa9ac28908cd"
+    },
+    {
+      "path": "tests/test_agentic_performance_app.py",
+      "bytes": 5652,
+      "sha256": "b8ddbd043c1c3200cc2f2e2d7fd1ebdb14f584664b9298ef19cc2be8ce50e13d"
+    },
+    {
+      "path": "tests/test_agentic_performance_backend.py",
+      "bytes": 3298,
+      "sha256": "03147adda630c0dce26434321c647be45ac14d86e4624600ad400d5430c8af99"
+    },
+    {
+      "path": "tests/test_agentic_performance_backend_v2.py",
+      "bytes": 1862,
+      "sha256": "dd3806bf8c7531ddd33162db7e083dde04f70b893a32156fa80bee221e83f044"
+    },
+    {
+      "path": "tests/test_agentic_performance_backend_v3.py",
+      "bytes": 2627,
+      "sha256": "bd9e364c461de8fdf1733e4ff5e61cafa31b72bd70c3db90204361c41d2f7809"
+    },
+    {
+      "path": "tests/test_agentic_performance_backend_v4.py",
+      "bytes": 1619,
+      "sha256": "3d339385fd2e58355c2cbb44bd40d34dd8b7baf2acc5df560597b4e83ceb33dd"
+    },
+    {
+      "path": "tests/test_agentic_performance_backend_v6.py",
+      "bytes": 1923,
+      "sha256": "837c52063dd659cd8fb858ddcc2ccb39b602f09e7cf50d251bf7f7d793e67c5c"
+    },
+    {
+      "path": "tests/test_agentic_performance_choreography.py",
+      "bytes": 4965,
+      "sha256": "2cecccd9aba57d341463a98fab7bee0d6a8c193757f34b3c40379905921b9e30"
+    },
+    {
+      "path": "tests/test_agentic_performance_evaluation.py",
+      "bytes": 5347,
+      "sha256": "f5409a6092c4150a951c69fb3c03255ea4625156ac836aac89bf7979bdb81914"
+    },
+    {
+      "path": "tests/test_agentic_performance_evaluation_v2.py",
+      "bytes": 3297,
+      "sha256": "e2222d6d1999f98b13acadee0e7cce678be9c62f34ffc404fd89ad93271a6405"
+    },
+    {
+      "path": "tests/test_agentic_performance_music.py",
+      "bytes": 1550,
+      "sha256": "56eeb36a10d5937e1d872eaf7696f3d2784aa0e49136617db8aa772e8f453eef"
+    },
+    {
+      "path": "tests/test_agentic_performance_nemotron.py",
+      "bytes": 3284,
+      "sha256": "9461ef1b99e4ae8c18e74bfe75b7e81ebf2efe2b40e0e6e0c05eae594a2d42ff"
+    },
+    {
+      "path": "tests/test_agentic_performance_nemotron_openrouter.py",
+      "bytes": 1865,
+      "sha256": "7abb731aad05546e31d9542549ec8f9477a737b5f1df8adddc9ea8915e2fadcd"
+    },
+    {
+      "path": "tests/test_agentic_performance_orchestrator.py",
+      "bytes": 5933,
+      "sha256": "49063ebe5a517945dd3d01e40e5ddbb7e106ff74a39c85581a3420350a50b9cb"
+    },
+    {
+      "path": "tests/test_agentic_performance_render.py",
+      "bytes": 2869,
+      "sha256": "a5deb38ab5d8b7a57d088391dcb869d4e141563993366f312dca52c78e8c9c44"
+    },
+    {
+      "path": "tests/test_agentic_performance_review_server.py",
+      "bytes": 1489,
+      "sha256": "fa31c90c3ba910ce38e04e714f81b4579eb3bcda7ac7df673f16e5611506e620"
+    },
+    {
+      "path": "tests/test_agentic_performance_runtime.py",
+      "bytes": 5338,
+      "sha256": "03122b0d2ccd8d3e497c8a4e7e4cb23e5d00b2efb2ad7b644729c9fd41c3838a"
+    },
+    {
+      "path": "tests/test_agentic_performance_stance_ik.py",
+      "bytes": 2166,
+      "sha256": "03e2209bf57b954b19cc24170ff506f5b7d965e47b5a96b89bffe8be6c7bbaed"
+    },
+    {
+      "path": "tests/test_agentic_performance_wholebody_qp.py",
+      "bytes": 1689,
+      "sha256": "59077d167ee4374bc0453628fed2d6e9a823f5392d80211be5c660fd85e545eb"
+    },
+    {
+      "path": "tests/test_agentic_performance_wholebody_qp_v2.py",
+      "bytes": 895,
+      "sha256": "3fe9044e8dd857da8016b0979aa36ca6185af32ea63f0197d538978a648871d4"
+    },
+    {
+      "path": "tests/test_agentic_phrase_executor.py",
+      "bytes": 5992,
+      "sha256": "9a4e2a0d4a631464c5a5a7d18eb88b363a635f944dcdbf52886edad2bde7e17f"
+    },
+    {
+      "path": "tests/test_agentic_phrase_expression.py",
+      "bytes": 9117,
+      "sha256": "760817cc3d8e45b868dff63cb29f4fbc53a50dcb3cd168bbe69ffdc8645ed797"
+    },
+    {
+      "path": "tests/test_agentic_phrase_planner.py",
+      "bytes": 7648,
+      "sha256": "bc9472c996291f7f978c2425857239a06ba978fc18c7aa575823383c8a82eef6"
+    },
+    {
+      "path": "tests/test_agentic_phrase_program.py",
+      "bytes": 5921,
+      "sha256": "0792f4184d0a2f634822ce51c391836c420143eef20e1a72e6417cd53900ecfd"
+    },
+    {
+      "path": "tests/test_agentic_phrase_program_executor.py",
+      "bytes": 9407,
+      "sha256": "5ba52fefb44d727837074af02ab29d0a56a0bbe8681bf9f98a79e462dbca1168"
+    },
+    {
+      "path": "tests/test_agentic_phrase_reference.py",
+      "bytes": 4036,
+      "sha256": "8abd7ee8e288cc9eba9fa736023c0f5eeb7a3054302899e76629b371c66ae721"
+    },
+    {
+      "path": "tests/test_agentic_phrase_reference_v2.py",
+      "bytes": 4909,
+      "sha256": "72dc030e9f10f1335b41dc15154cfebfc08c23273375632598b96cf5742ce36e"
+    },
+    {
+      "path": "tests/test_agentic_reference.py",
+      "bytes": 4650,
+      "sha256": "722b6325e27058bbfcfb38cfc05da99391a45cb049912b3cd5f32cb8dcd0e5cf"
+    },
+    {
+      "path": "tests/test_agentic_repair_audit.py",
+      "bytes": 19666,
+      "sha256": "0c8107d2aeb99e3be653a508677bcabd21e7657f23779bb248638215593329a1"
+    },
+    {
+      "path": "tests/test_agentic_repair_audit_v2.py",
+      "bytes": 6800,
+      "sha256": "6b19c27c3c242441900715a72c7cda9d5677fee668a73a5bf23efaa84882eb18"
+    },
+    {
+      "path": "tests/test_agentic_repair_driver.py",
+      "bytes": 10673,
+      "sha256": "564a1764db383a63a30685006358c3ea3e91339178b799a546afa7b574cc60f7"
+    },
+    {
+      "path": "tests/test_agentic_repair_evaluation.py",
+      "bytes": 5738,
+      "sha256": "563861bc4d5e73f58ae928c49d6cf5a60dabbba37babcae22377ba698af790e7"
+    },
+    {
+      "path": "tests/test_agentic_repair_runtime.py",
+      "bytes": 3634,
+      "sha256": "fdd0b1bf32d974887217b41f47bebcdc3dd7bcc953045275efc949b43f46bb27"
+    },
+    {
+      "path": "tests/test_agentic_repair_search.py",
+      "bytes": 6130,
+      "sha256": "4f1eb456035ba3cd99d15e331a429a1f0c128b81086dab10fd7281798c2b1fb6"
+    },
+    {
+      "path": "tests/test_agentic_robustness_audit.py",
+      "bytes": 13463,
+      "sha256": "384babec5fadc4aec1dfe7cb2646577478daadc20cf8e63cf96c2bf8d214741d"
+    },
+    {
+      "path": "tests/test_agentic_robustness_driver.py",
+      "bytes": 6043,
+      "sha256": "a7bfc599bf149e50b934de1bd3bf69c610c11299811e81634f4d108772ba53f4"
+    },
+    {
+      "path": "tests/test_agentic_robustness_driver_v2.py",
+      "bytes": 1466,
+      "sha256": "657ba574992ea0eb850d6598f8ce821cd5974bf8cf492473f338812f5424eb2d"
+    },
+    {
+      "path": "tests/test_agentic_robustness_evaluation.py",
+      "bytes": 7159,
+      "sha256": "ef8debb8d527a979778938adbc66ddcbc799a5185608d89e0144fedcdf2e0bd4"
+    },
+    {
+      "path": "tests/test_agentic_robustness_plan.py",
+      "bytes": 4062,
+      "sha256": "d5a14190db24af499c643f8317eb6fc064dccc229ca2fa14c4a17c9803d40a00"
+    },
+    {
+      "path": "tests/test_agentic_robustness_runtime.py",
+      "bytes": 9233,
+      "sha256": "3f763b6134f15686fea9b75b46d9132b9b2f187f57eea8c5c7e768bce238f0b4"
+    },
+    {
+      "path": "tests/test_agentic_robustness_scenarios.py",
+      "bytes": 3275,
+      "sha256": "dcd6a2585020584eaecfc85505e448358c1b1648e06de8ecb20ac29d6c620a18"
+    },
+    {
+      "path": "tests/test_agentic_robustness_serialization.py",
+      "bytes": 4944,
+      "sha256": "b6b4ec699c26d4bd580e79a2120b38070a5964bcb6115b5430903bc64d704bbd"
+    },
+    {
+      "path": "tests/test_agentic_robustness_v2_serialization.py",
+      "bytes": 3518,
+      "sha256": "93eee69c3328139e910c822e6c56a7441b18b45e4851f862f251fb636a1bf35b"
+    },
+    {
+      "path": "tests/test_agentic_tool_audit.py",
+      "bytes": 8638,
+      "sha256": "32dc34d315f29813c0f285cc0b41345dfbe7d66a29deb8f0dc62f3922e807626"
+    },
+    {
+      "path": "tests/test_agentic_tool_audit_v2.py",
+      "bytes": 12464,
+      "sha256": "c1152c1ac13cab1d4d6eb2d74023eae38fb04abca86661c4ccba32113195ceca"
+    },
+    {
+      "path": "tests/test_agentic_tool_compatibility_smoke.py",
+      "bytes": 2214,
+      "sha256": "c8bc6d002fabe24083aceef0547b686e9b2834faf7769e1d0d0b509dc5be0b2a"
+    },
+    {
+      "path": "tests/test_agentic_tool_compatible_runtime.py",
+      "bytes": 5478,
+      "sha256": "ee5b07c078ebf84097ae1d3c2b61a4e77b1a8ebc3472da7176aaef313141bcb1"
+    },
+    {
+      "path": "tests/test_agentic_tool_preview.py",
+      "bytes": 2371,
+      "sha256": "83d599f14d8268c1dfe9bed580bea4bb231fc09d69798c2537692557800b2a06"
+    },
+    {
+      "path": "tests/test_agentic_tool_preview_projection.py",
+      "bytes": 4717,
+      "sha256": "8d6dedd7a49f76c2fb8c12a1126a925c334c2a3af6884e970d80ce692b937242"
+    },
+    {
+      "path": "tests/test_agentic_tool_preview_v2.py",
+      "bytes": 3724,
+      "sha256": "33c42c043225563cb7521375b2370981ecc6f3afab0375a28ec59b539e803067"
+    },
+    {
+      "path": "tests/test_agentic_tool_projection_audit.py",
+      "bytes": 4421,
+      "sha256": "bbe20050812cd78c7a1b59f35af4d9a9a456f1e813c820666ef4bdce1b923d76"
+    },
+    {
+      "path": "tests/test_agentic_tool_reference_diagnostics.py",
+      "bytes": 3891,
+      "sha256": "388a9fa0e0131bb7f29fffd5e6a7dbd3548bc03890bd85d68070bca72c534cdd"
+    },
+    {
+      "path": "tests/test_agentic_tool_reference_diagnostics_projection.py",
+      "bytes": 6357,
+      "sha256": "0cb93dcdb952372edb3b90f41ce50e638932e1eae42af81cfa25ed881a014ffc"
+    },
+    {
+      "path": "tests/test_agentic_tool_reference_diagnostics_v2.py",
+      "bytes": 5052,
+      "sha256": "8694c598864c64047a361ce0d9b1704cc8f31f31ed4cf8f34830610fff7adea3"
+    },
+    {
+      "path": "tests/test_agentic_tool_reference_projection.py",
+      "bytes": 3470,
+      "sha256": "6a063db0685697016dc94d694f476a2d6717fa0e18fe928189dc1781c1722aa9"
+    },
+    {
+      "path": "tests/test_agentic_tool_runtime.py",
+      "bytes": 5092,
+      "sha256": "91804c4621b88c29f7fa9886032419b1f448a3e0097103eae55282f80cac5ad6"
+    },
+    {
+      "path": "tests/test_agentic_tool_search.py",
+      "bytes": 5608,
+      "sha256": "732c03bcb6c88fed529494b96c94a60ecd79896f7e7af1701a9aebb697e0514d"
+    },
+    {
+      "path": "tests/test_agentic_tool_smoke_recovery.py",
+      "bytes": 1858,
+      "sha256": "fbb166cb9dc7fe66d422d153eface3e8962f8e7c8b2ed377e77b01d091036232"
+    },
+    {
+      "path": "tests/test_agentic_tool_workflow.py",
+      "bytes": 12821,
+      "sha256": "c0947ff0b538903f5394602002e787e3ae18acc8fa208d208df63f89858b7a44"
+    },
+    {
+      "path": "tests/test_agentic_tool_workflow_v2.py",
+      "bytes": 16347,
+      "sha256": "d46c189f70bc2376a1486fc4d51408b57ed795920ed8951734ef822b4581fffa"
+    },
+    {
+      "path": "tests/test_agentic_wide_clock_probe.py",
+      "bytes": 12243,
+      "sha256": "2d302a47bea7eeeb0a363d8b8a5c49855512d7046d6c28315639563629eec70e"
+    },
+    {
+      "path": "tests/test_agentic_workflow.py",
+      "bytes": 6570,
+      "sha256": "9184e4b798b5f59c11898750b7398867a5776bb7a93b9209d3536883e67d77c1"
+    }
+  ],
+  "audit": {
+    "python_ast_files": 439,
+    "generic_secret_pattern_flags": [],
+    "excluded_private_bridge_files": [
+      "experiments/agentic/diagnose_tool_reference.py",
+      "experiments/agentic/diagnose_tool_reference_projection.py",
+      "experiments/agentic/diagnose_tool_reference_v2.py",
+      "experiments/agentic/phrase/export_trial.py",
+      "src/pulsemorph/agentic/trial_export.py",
+      "tests/test_agentic_trial_export.py"
+    ],
+    "no_git_directory": true,
+    "no_learning_directory": true
+  }
+}

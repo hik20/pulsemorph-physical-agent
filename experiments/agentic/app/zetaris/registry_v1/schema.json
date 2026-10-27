@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PulseMorph shared capability registry row v1",
+  "type": "object",
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 240
+    },
+    "body_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64
+    },
+    "capability": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 12000
+    },
+    "evidence_class": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "license_scope": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000
+    }
+  },
+  "required": [
+    "source_id",
+    "title",
+    "body_id",
+    "capability",
+    "evidence_class",
+    "license_scope"
+  ],
+  "additionalProperties": false
+}

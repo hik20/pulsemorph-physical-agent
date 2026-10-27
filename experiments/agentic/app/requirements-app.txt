@@ -1,0 +1,6 @@
+# Additional app dependencies for the existing validated .venv-motor environment.
+# This is not a complete motor/runtime environment lockfile.
+jsonschema==4.25.1
+imageio==2.38.1
+imageio-ffmpeg==0.6.0
+Pillow==13.0.0

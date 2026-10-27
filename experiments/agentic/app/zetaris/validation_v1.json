@@ -1,0 +1,19 @@
+{
+  "schema": "pulsemorph.zetaris_capability_context_fixture_validation.v1",
+  "tests": 13,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "source_hashes": {
+    "src\\pulsemorph\\agentic\\app\\integrations.py": "15ce1efe7d31133a3356ccc1eda1a4f3081b828c5604a5f7f4dce8d907155501",
+    "tests\\test_agentic_app_integrations.py": "16df1582b9af723ea37595fc53eed5d05295570df1f6fb6ed61617dc6fd94da2"
+  },
+  "sources_unchanged": true,
+  "test_log": "test_authored_registry_CSV_rows_fit_strict_planner_DTO (test_agentic_app_integrations.IntegrationTests.test_authored_registry_CSV_rows_fit_strict_planner_DTO) ... ok\ntest_empty_or_unusable_rows_verify_query_but_not_context (test_agentic_app_integrations.IntegrationTests.test_empty_or_unusable_rows_verify_query_but_not_context) ... ok\ntest_explicit_ui_proxy_selection_required (test_agentic_app_integrations.IntegrationTests.test_explicit_ui_proxy_selection_required) ... ok\ntest_fixture_error_body_never_reaches_ui (test_agentic_app_integrations.IntegrationTests.test_fixture_error_body_never_reaches_ui) ... ok\ntest_fixture_read_only_remote_request_and_injection_boundary (test_agentic_app_integrations.IntegrationTests.test_fixture_read_only_remote_request_and_injection_boundary) ... ok\ntest_http_success_without_rows_does_not_verify_query (test_agentic_app_integrations.IntegrationTests.test_http_success_without_rows_does_not_verify_query) ... ok\ntest_missing_config_never_claims_remote_execution (test_agentic_app_integrations.IntegrationTests.test_missing_config_never_claims_remote_execution) ... ok\ntest_old_store_and_outside_path_rejected (test_agentic_app_integrations.IntegrationTests.test_old_store_and_outside_path_rejected) ... ok\ntest_record_strips_nested_credentials_and_requires_identity (test_agentic_app_integrations.IntegrationTests.test_record_strips_nested_credentials_and_requires_identity) ... ok\ntest_scope_and_DTO_reject_other_source_body_extra_fields_large_values (test_agentic_app_integrations.IntegrationTests.test_scope_and_DTO_reject_other_source_body_extra_fields_large_values) ... ok\ntest_source_body_scope_forwarded_and_fallback_terms_bounded (test_agentic_app_integrations.IntegrationTests.test_source_body_scope_forwarded_and_fallback_terms_bounded) ... ok\ntest_source_scoped_success_survives_irrelevant_text_and_limit (test_agentic_app_integrations.IntegrationTests.test_source_scoped_success_survives_irrelevant_text_and_limit) ... ok\ntest_unpaired_surrogates_rejected_in_each_field_but_Turkish_text_allowed (test_agentic_app_integrations.IntegrationTests.test_unpaired_surrogates_rejected_in_each_field_but_Turkish_text_allowed) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.192s\n\nOK\n",
+  "real_remote_query_executed": false,
+  "model_calls": 0,
+  "physics_steps": 0,
+  "actual_configuration_state": "missing_configuration",
+  "actual_live_query_verified": false,
+  "actual_usable_context_verified": false
+}

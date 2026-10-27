@@ -1,0 +1,11 @@
+# Reused code and new work disclosure
+
+The workspace already contained PulseMorph research infrastructure and external numerical, media and robotic components when this agentic branch was developed. The workspace root is not a Git repository, so this package does not invent a commit history or attest an unknown pre-event start date. The human participant must complete the event's historical-code declaration using their actual project history.
+
+New work in this branch includes typed model/tool orchestration, persistent-body action binding, full-state copied physics previews, explicit model revision/commit/refusal decisions, numerical trace parity checks, body-task evaluators, the local applications, and the timed music-program compiler. Later classical stance/contact/WBC controller experiments are separately versioned engineering work; their results do not retroactively change previous failed trials.
+
+Reused foundations include NVIDIA ProtoMotions G1 tracking/source interfaces, the pretrained ONNX actor, G1 body/meshes/controller parameters, MuJoCo, existing MotionReference contracts, earlier PulseMorph research utilities, safe initialization derived from the known source frame, and the Meterless upstream engine. Learning-path work owned by the other project branch is not presented as a newly demonstrated success of this agentic demo.
+
+The music score was procedurally synthesized from oscillators and seeded noise. Recorded movement frames are computed simulation, not hardware footage. The demo editing uses offline Microsoft Zira narration and edited recorded clips; edited replay is not a new model or physics execution.
+
+No new model weights are trained in the demonstrated agentic loop. General body transfer, long-horizon recovery, hardware safety, clean-machine installation and broad dance-quality claims remain unverified. Local source preparation is not publication or competition submission.

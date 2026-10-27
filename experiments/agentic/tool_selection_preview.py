@@ -1,0 +1,136 @@
+"""Audit-gated DEVELOPMENT preview of recorded states, never new physics.
+
+Uses the unchanged generalization_preview renderer (100 frames, 25 fps,
+960x720, mj_forward only). Titles show method/tool and physics/model budgets.
+The global fresh calibration is the baseline panel; all four global/local
+calibration executions remain disclosed in the separate preview manifest.
+"""
+from __future__ import annotations
+
+import argparse
+from pathlib import Path
+import shutil
+import sys
+
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(Path(__file__).parent))
+import generalization_preview as common
+
+read, sha256, write_new_json = common.read, common.sha256, common.write_new_json
+TOOLS = ('global_clock_v1', 'local_clock_1p4_2p8_v1')
+METHODS = ('surrogate_search', 'llm_feedback', 'llm_feedback_off')
+
+
+def inventory(directory):
+    return {str(p.relative_to(directory)): sha256(p) for p in directory.rglob('*') if p.is_file()}
+
+
+def verify_audit(pilot, audit_path):
+    """Bind an accepted full audit to this exact present evidence inventory."""
+    pilot, audit_path = Path(pilot).resolve(), Path(audit_path).resolve()
+    report = read(audit_path)
+    if (report.get('schema') != 'pulsemorph.agentic_tool_selection_final_audit.v1'
+            or any(report.get(k) is not True for k in
+                   ('audit_passed', 'original_evidence_unchanged', 'audit_sources_unchanged'))
+            or report.get('errors') != []):
+        raise ValueError('accepted unchanged-evidence tool-selection audit required')
+    current = inventory(pilot)
+    if not current or report.get('evidence_inventory_before') != current or report.get('evidence_inventory_after') != current:
+        raise ValueError('audit does not match actual pilot evidence')
+    pins = report.get('source_hashes_before')
+    if not pins or pins != report.get('source_hashes_after'):
+        raise ValueError('audit source hashes are not stable')
+    for name, digest in pins.items():
+        path = (ROOT / name).resolve()
+        if ROOT not in path.parents or not path.is_file() or sha256(path) != digest:
+            raise ValueError('audit source changed: ' + name)
+    return report, current
+
+
+def render(pilot, task_id, output, audit_path):
+    pilot, output, audit_path = Path(pilot).resolve(), Path(output).resolve(), Path(audit_path).resolve()
+    if output.exists():
+        raise FileExistsError('preview output already exists')
+    if (ROOT / 'artifacts/media/agentic').resolve() not in output.parents:
+        raise ValueError('preview output must be under artifacts/media/agentic')
+    report, evidence = verify_audit(pilot, audit_path)
+    audit_digest = sha256(audit_path)
+    comparison, protocol = read(pilot / 'comparison.json'), read(pilot / 'protocol.json')
+    if (comparison.get('schema') != 'pulsemorph.agentic_tool_selection_comparison.v1'
+            or comparison.get('development_only') is not True
+            or protocol.get('phase') != 'development_comparison'
+            or comparison.get('comparison_valid') is not True
+            or comparison.get('physical_trials') != 100
+            or comparison.get('planned_budget') != dict(physical_trials=100, candidate_trials=96, calibration_trials=4)
+            or protocol.get('imported_prior_trial_records', []) != []
+            or comparison['protocol_sha256'] != sha256(pilot / 'protocol.json')):
+        raise ValueError('completed development comparison with four calibration costs required')
+    tasks = [t for t in comparison['tasks'] if t['task_id'] == task_id]
+    if len(tasks) != 1:
+        raise ValueError('unknown or duplicate task')
+    task = tasks[0]
+    if len(task['methods']) != 3 or [m['method'] for m in task['methods']] != list(METHODS):
+        raise ValueError('expected exactly three methods')
+    labels, selected = ['DEV BASE | GLOBAL | 1P/0M'], []
+    for method, title, calls in zip(task['methods'], ('NUMERIC', 'LLM+FB', 'LLM-OFF'), (0, 8, 8)):
+        row = method.get('selected')
+        if row is None:
+            raise ValueError('no physically eligible selected trial: ' + method['method'])
+        tool = row.get('control_tool')
+        if tool not in TOOLS or method.get('physical_trials') != 8 or method.get('model_proposal_calls') != calls:
+            raise ValueError('tool or method budget mismatch')
+        audited = [s for s in report['selections'] if s['task_id'] == task_id and s['method'] == method['method']]
+        if len(audited) != 1 or audited[0]['selected_candidate'] != row['candidate_id'] or audited[0]['selected_tool'] != tool:
+            raise ValueError('selected identity/tool differs from audit')
+        labels.append(f"DEV {title} | {'GLOBAL' if tool == TOOLS[0] else 'LOCAL'} | 8P/{calls}M")
+        selected.append(dict(method=method['method'], candidate_id=row['candidate_id'], control_tool=tool,
+                             physical_trials=8, model_proposal_calls=calls))
+    calibration_id = 'calibration_' + task['source_id']
+    baseline = [r for r in comparison['calibrations'] if r['candidate_id'] == calibration_id]
+    if len(comparison['calibrations']) != 4 or len(baseline) != 1 or baseline[0].get('control_tool') != TOOLS[0]:
+        raise ValueError('fresh global calibration baseline required')
+    parity = comparison.get('calibration_parity', {})
+    if parity.get('parity_passed') is not True or parity.get('calibration_trials') != 4 or parity != report.get('calibration_parity'):
+        raise ValueError('four fresh calibration parity proof required')
+    # Shared renderer captures exact selected evaluation/manifest/trace hashes,
+    # source XML/meshes and original protocol audio; all remain unchanged.
+    dependencies = [Path(__file__).resolve(), Path(common.__file__).resolve(), ROOT / 'src/pulsemorph/evidence.py']
+    dependencies += [ROOT / name for name in report['source_hashes_before']]
+    pins = {str(p.resolve()): sha256(p) for p in dependencies}
+    old_labels = common.LABELS
+    try:
+        common.LABELS = labels
+        video = common.render_case(pilot, output, task)
+    finally:
+        common.LABELS = old_labels
+    for path, digest in pins.items():
+        if sha256(Path(path)) != digest:
+            raise ValueError('preview dependency changed during render')
+        dest = output / 'source_snapshot' / Path(path).relative_to(ROOT)
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(path, dest)
+    verify_audit(pilot, audit_path)
+    if sha256(audit_path) != audit_digest or inventory(pilot) != evidence:
+        raise ValueError('audit or evidence changed during render')
+    write_new_json(output / 'tool_selection_manifest.json', dict(
+        schema='pulsemorph.agentic_tool_selection_preview.v1', development_only=True,
+        task_id=task_id, audit_path=str(audit_path), audit_sha256=audit_digest,
+        comparison_sha256=sha256(pilot / 'comparison.json'), protocol_sha256=sha256(pilot / 'protocol.json'),
+        render_manifest_sha256=sha256(output / 'manifest.json'), preview_dependencies_sha256=pins,
+        baseline=dict(candidate_id=calibration_id, control_tool=TOOLS[0], fresh=True),
+        selected=selected, candidate_budget_each_method=8, model_calls_each_method=[0, 8, 8],
+        imported_prior_trial_labels=0, calibration_trials=4, calibration_parity=parity,
+        panel_budget_key='P = physical trials; M = model proposals; calibration costs separate',
+        scope='DEVELOPMENT; actual recorded qpos through unchanged mj_forward renderer; no new physics or held-out quality claim.',
+        audio=read(output / 'manifest.json')['audio'],
+        source_capture_sha256={str(p.relative_to(output)): sha256(p) for p in (output / 'source_snapshot').rglob('*') if p.is_file()}))
+    return video
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description=__doc__)
+    for name in ('pilot', 'output', 'audit'):
+        parser.add_argument('--' + name, required=True, type=Path)
+    parser.add_argument('--task', required=True)
+    args = parser.parse_args()
+    print(render(args.pilot, args.task, args.output, args.audit))
