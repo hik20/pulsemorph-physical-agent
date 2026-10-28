@@ -1,0 +1,47 @@
+{
+  "schema": "pulsemorph.clean_firstuse_witness.v1",
+  "date": "2026-10-28",
+  "status": "PASS",
+  "checks": {
+    "native_task_completed": true,
+    "fixed_tolerance_and_hold": true,
+    "actual_twenty_samples": true,
+    "actual_sample_period": true,
+    "sampled_hold_met": true,
+    "task_hash_bound": true,
+    "physical_flags_all_pass": true,
+    "unchanged_force_caps": true,
+    "aggregate_counts": true,
+    "actual_counts": true,
+    "backend_counts": true,
+    "no_LLM": true,
+    "owned_pose_exact": true,
+    "pins_all_current": true,
+    "pins_all_in_new_install": true,
+    "no_default_vendor_checkout": true,
+    "failed_first_attempt_preserved": true,
+    "closure_end_attested": true,
+    "trace_final_sample_matches": true
+  },
+  "dependency_install": "New isolated CPython3.11 environment;30 hash-verified cached public wheels; pip check passed; no new downloads",
+  "tests_passed": 33,
+  "source_pin_count": 397,
+  "maximum_wrist_error_mm": 4.052848065365641,
+  "final_wrist_error_mm": 3.129578484343052,
+  "sampled_hold_s": 0.39999999999995617,
+  "actual_counts": {
+    "controls": 120,
+    "steps": 2400,
+    "runtime_FK": 121,
+    "wrist_Jacobian": 242
+  },
+  "aggregate_counts": {
+    "online_ONNX": 120,
+    "warmup_ONNX": 1
+  },
+  "no_live_model_calls": true,
+  "minimum_root_height_m": 0.7861009956300644,
+  "result_sha256": "c8ead37bbc0378d790d64c4c015202ce8c23d2a085346d4deb31db8bd5f413ac",
+  "journal_sha256": "a6bf44f896e18842ac9e95da61906dbfd6b1ff236b035ef70280807002af2d99",
+  "qualification": "Post-submission local installation/HOLD engineering witness on the same Windows host. Not a fresh operating-system/network acquisition test, live hosted-model task, new reach/dance performance or general body-control proof. Earlier failed setup attempt is preserved."
+}

@@ -1,6 +1,6 @@
-# PulseMorph — submission draft, not published
+# PulseMorph — submitted evidence and post-submission maintenance
 
-Checked 27 October 2026, approximately 23:16 UTC (28 October locally). This is a review draft; no form, repository, video or message was published.
+Checked 27 October 2026, approximately 23:16 UTC (28 October locally). This earlier rules review is retained as history. Current status: agentic-only source and demo published; portal Submitted1/1 and final video URL verified after reload. Eligibility/deadline extension remains unverified.
 
 ## Official requirements checked now
 
@@ -26,7 +26,7 @@ Primary source: [Open Agent Hackathon 2026 event and rules](https://hackathon.ge
 
 **Memory:** Meterless is used as a real local persistent evidence store. Its upstream engine was tested by write, query and fresh-process reopen; later application records include measured trials and explicit rejections. This is symbolic evidence memory, not learned motor weights. The newest body-agent branch must not be described as using retrieved memory unless its own receipts show that.
 
-**Sponsor disclosure / unresolved blocker:** Zetaris has an adapter but **no authenticated live query is verified**. Consequently this draft does not currently meet the mandatory two-sponsor integration requirement. Do not replace this statement with a fixture or a logo.
+**Sponsor evidence — post-submission:** An authenticated Zetaris SQL CTE returned two recorded-evidence rows in7.438seconds and was saved as `PulseMorph_recorded_trial_evidence`. It did not persist a source table or retrieve context for the body planner. This later evidence cannot establish pre-deadline compliance.
 
 **Pre-existing components:** Declare the existing PulseMorph code (its exact pre-event dates are unknown and must be confirmed by the human participant; the workspace root has no Git history) and all reused libraries, G1/body assets, pretrained controller/model, source motions and their exact pinned origins. Separate new agent orchestration, physics evidence, application and controller experiments from pre-existing components. Repository availability does not establish redistribution rights for models, motions or character assets.
 
@@ -34,7 +34,7 @@ Primary source: [Open Agent Hackathon 2026 event and rules](https://hackathon.ge
 
 ### Hosted product and NVIDIA prize clarification
 
-The public submission rule text checked above specifies video, deck, GitHub and explanations; it does **not explicitly require a hosted working-product URL**. A private submission form may have additional fields; that form has not been inspected here. Do not promise that a localhost URL is accessible to judges. A video/source submission and a publicly hosted interactive product are different deliverables.
+The public submission rule text checked above specifies video, deck, GitHub and explanations; it does **not explicitly require a hosted working-product URL**. The private portal was inspected; it shows Submitted1/1 and the final video field was verified after reload. This does not establish deadline extension or organizer acceptance. Do not promise that a localhost URL is accessible to judges. A video/source submission and a publicly hosted interactive product are different deliverables.
 
 The event lists **Best use of NVIDIA Nemotron**, awarding an NVIDIA DGX Spark Founder's Edition valued at $4,699. The public page does not name Nemotron3.5 Super VL as a mandatory version or publish further special-prize qualification tests. Existing NVIDIA-derived robot/model components are not automatically Nemotron use.
 
@@ -42,8 +42,8 @@ Configuration distinction: **Zetaris and Meterless are event requirements; NVIDI
 
 [NVIDIA's official model page](https://build.nvidia.com/nvidia/nemotron-3.5-super-vl-120b-a12b) documents model `nvidia/nemotron-3.5-super-vl-120b-a12b`, hosted API base `https://integrate.api.nvidia.com/v1`, text/image input, and a free prototype endpoint. A new local adapter supports a bounded visual-critic request with saved images and numerical feedback; the NVIDIA NIM adapter has fixture coverage, and the distinct OpenRouter transport completed one genuine advisory Nemotron review described below. **One live advisory contribution is claimed; no motor-validated improvement is claimed.** No download, new account or payment was initiated.
 
-- [ ] Authorized Zetaris deployment URL, organization, credentials supplied through the existing private environment, permitted query endpoint/engine and usable context table; a real read-only result and evidence of product use. Historically recorded process presence flags for `ZETARIS_BASE_URL`, `ZETARIS_ORG_ID`, `ZETARIS_API_KEY`, `ZETARIS_APP_CONTEXT_TABLE`, and `ZETARIS_APP_TRANSPORT` are all false. No credential store was searched. Experimental transport selection alone is not validation.
-- [ ] User-authorized public or judge-accessible GitHub URL, final video URL, deck URL, and submission access. Local ZIPs and local videos are not public URLs. Publishing/submitting needs the user's authorization; this task grants draft preparation only.
+- [x] Post-submission authenticated Zetaris recorded-evidence CTE,2rows,7.438seconds; no planner/source-table integration claim.
+- [x] Agentic-only repository https://github.com/hik20/pulsemorph-physical-agent ; final150-second English video https://youtu.be/9ue_CYnoW1w ; deckV3 uniqueassets in release v0.1.0-demo ; portal Submitted1/1. No eligibility or extension claim.
 - [ ] Final 1–4 minute video: measured duration, understandable narration, legible actual/preview labels, no claim that an uncommitted preview was actual execution, and no music-dance success claim without a successful recorded full-window run.
 - [ ] Deck and README tell the same current story and disclose local prepared-host dependencies, private asset/profile prerequisites, unresolved clean-machine setup and rights limitations.
 - [ ] Confirm participant/team registration, selected track and pre-existing-code declaration. Do not invent registration or eligibility status.
@@ -55,7 +55,7 @@ Evidence pointers: `artifacts/runs/agentic/app_integrations_v1/manifest.json` re
 
 One explicitly authorized **live visual-critic call** completed through OpenRouter's free endpoint: requested and returned `nvidia/nemotron-3.5-super-vl:free`,17.687seconds,2existing robot images,5,845totaltokens, no tools or physics execution. Receipt and parsed response are in the private local evidence archive; a sanitized summary is included at `evidence/summary.json`. The critic recommended revision of the previously recorded hypothetical dance candidate. It identified limited phrase contrast and uncertain timing/contact evidence. This is an observed advisory multimodal contribution, **not the main choreography generator, new motor training, or motor-validated improvement**. This one call establishes advisory model use only; it does not establish a successful physical dance.
 
-Critical interpretation: its statement that torque/contact data does not exist means that such data was not supplied to this critic; the simulator does record physical telemetry. Its description of negative world-X travel as sideways is axis-ambiguous and must not become an expert physical fact. Static sampled frames cannot prove continuous timing, support or safety. The model has no execution authority. Zetaris remains unverified, so the mandatory sponsor-integration blocker is unchanged.
+Critical interpretation: its statement that torque/contact data does not exist means that such data was not supplied to this critic; the simulator does record physical telemetry. Its description of negative world-X travel as sideways is axis-ambiguous and must not become an expert physical fact. Static sampled frames cannot prove continuous timing, support or safety. The model has no execution authority. A later authenticated Zetaris CTE query is verified; persisted data-source integration and body-planner retrieval remain unverified, and no retroactive competition-compliance claim is made.
 
 ## Zetaris provisioning update — 23:35 UTC
 
@@ -66,3 +66,7 @@ Fastest legitimate path: sign in with the user's OTP, use an already available e
 Local deployment is not a deadline-sized fallback on this machine. Docker CLI29.4 is present but the daemon is unavailable (`Server=null`) and no DockerDesktop/backend process is running. Free disk was approximately1.75GiB onC and2.19GiB onD. Zetaris's [official installation test record](https://github.com/zetaris/getting-started/blob/main/docs/install/zetaris-installation-test-record.md) reports a roughly4GB first image download,6GB minimum/8GB recommended Docker memory, registry access and a supplied platform bundle. No install, image pull or paid resource was started.
 
 The [official client HOWTO](https://github.com/zetaris/getting-started/blob/main/scripts/HOWTO.md) distinguishes UI-origin SQL proxy from direct REST/JDBC: a query requires authenticated authorization, organization identity, and optional engine selection. Cloud OTP authentication alone does not prove that our adapter's route is exposed by that deployment. Keep provisioning, authentication, execution and useful query evidence separate.
+
+## Current delivery links — 28 October 2026
+
+Submitted1/1 and finalvideoURL were verified after reload. Final video: https://youtu.be/9ue_CYnoW1w (150seconds, English Gemini3.8Flash-LiteTTS/Kore). Public source: https://github.com/hik20/pulsemorph-physical-agent ; release v0.1.0-demo contains unique deckV3 assets. Earlier provision/install observations above are dated history; one subsequent authenticated CTE returned2recorded rows in7.438seconds and was saved as PulseMorph_recorded_trial_evidence. No persisted source table/body-planner retrieval or pre-deadline sponsor compliance is inferred.

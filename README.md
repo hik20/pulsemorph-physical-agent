@@ -1,70 +1,87 @@
-> **Final demo:** [Watch the 150-second English video](https://youtu.be/9ue_CYnoW1w). English on-screen labels and Gemini 3.8 Flash-Lite TTS narration. [Deck and downloadable files](https://github.com/hik20/pulsemorph-physical-agent/releases/tag/v0.1.0-demo).
->
-> The hackathon portal shows Submitted 1/1 and its video URL was verified after reload. This does not establish an organizer-confirmed deadline extension or eligibility. Zetaris Cloud Gateway verified our AWS binding and launched a Mini Trial compute; useful SQL/data retrieval is still pending provisioning.
-
 # PulseMorph Physical Agent
 
-This public repository covers the agentic physical-feedback experiments only. DanceModel neural-network architecture, training code, datasets and weights remain private and are not licensed or distributed here. Shared motion contracts are included only to support the agentic runtime.
+[Watch the 150-second English demo](https://youtu.be/9ue_CYnoW1w) · [Submitted demo assets](https://github.com/hik20/pulsemorph-physical-agent/releases/tag/v0.1.0-demo)
 
-PulseMorph lets a language-model agent author timed movement programs, test them in a copied humanoid state, inspect physical feedback, and revise, choose or refuse execution. Dance is a visible stress test of the agent architecture. Interactive movement creators and robotics researchers are the intended users.
+A general-purpose language model writes timed joint programs, tests a copied humanoid state in physics, reads measured feedback, then revises, commits or refuses. Music and expressive whole-body performance are the product direction. Short reaching and HOLD tasks are engineering probes.
 
-This is a **local research prototype**, not a claim of general robot control or a newly trained motor policy. LLM robotics has prior work; we do not claim to be its first demonstration. The contribution here is the explicit body-bound program/experiment/feedback/decision loop and its traceable execution boundaries.
+This repository contains the **agentic module and minimal motion interfaces**. DanceModel architecture, training code, private datasets and weights remain private. Original agentic code is MIT; external robot, model and media rights are separate.
 
-## Demonstrated results
+## What has actually worked
 
-- A real music experiment used four live model calls and three full 16.8-second physics previews. The model wrote all 29 requested joint trajectories, revised them from measured feedback, and refused to commit the drifting run. The video correctly labels this as a **physics preview, not an applied dance**.
-- A separate reaching task used four live calls, two previews and two actual commits on one persistent body. Final right/left wrist errors were 11.398/11.697 mm within fixed 12 mm tolerances. Each selected preview and actual commit matched the recorded full state and numerical execution trace.
-- Classical contact/balance controller experiments are separate engineering work. Short standing/movement tests passed, but long music performance admission remains open. No general dance, hardware safety, real-time control or learned new weights are claimed.
+- The recorded music experiment: four live LLM calls, three 16.8-second physics previews, **zero applied dance commits**. The model refused the drifting dance. The video labels hypothetical physics separately from actual execution.
+- A separate persistent-body episode: four live calls, two previews and two actual commits. Final wrist errors were 11.398/11.697 mm inside fixed 12 mm tolerances, with exact preview/commit numerical parity.
+- Post-submission maintenance: zero-work rejected-action feedback and real 20 ms observation journals now support sampled HOLD verification. A new owned standing recipe avoids private source-motion initialization.
+- A new isolated Windows Python environment installed 30 hash-verified cached public wheels, passed dependency checks and 33 targeted tests. The source-only CLI then completed a 2.4-second physical HOLD probe: 120 control calls, 2,400 physics steps, maximum wrist error 4.053 mm over a 0.4-second sampled hold. [Witness and limits](evidence/portable-firstuse-20261028.json). An earlier failed setup attempt exposed a default-vendor assumption and was preserved before the additive fix.
 
-See `docs/SUBMISSION.md`, `docs/PREEXISTING_CODE.md`, `docs/DEPENDENCIES.md` and the small `evidence/` summaries. A two-and-a-half-minute English demo video, English captions and seven-slide editable deck are supplied separately in the local submission package. Public URLs are not fabricated.
+The maintenance witness used **zero live LLM calls**. Hosted-provider task mode is implemented and fixture-tested; this release does not claim a live hosted-model task, general reach, reliable musical dance, hardware control, continuous hold between samples or newly learned motor weights.
 
 ## Architecture
 
-1. The model writes a typed movement program from the instruction, complete music summary, body state and joint limits.
-2. A local compiler creates continuous reference curves and checks position, speed and acceleration limits.
-3. A complete physics/controller state copy runs a hypothetical experiment. The actual parent does not move.
-4. Measured movement, posture, contact and drift feedback returns to the model.
-5. The model explicitly revises, commits an eligible preview, or refuses. Local execution authority remains separate from model proposals.
+1. The model proposes typed, named-joint targets from the instruction, music description and body observation.
+2. A local compiler checks continuous position, speed and acceleration bounds.
+3. A complete copied physics/controller state previews the candidate; the actual parent remains unchanged.
+4. Measured feedback returns to the model, which explicitly revises, commits an eligible preview or refuses.
+5. Local execution checks observation identity, finite budgets and exact preview/commit trace agreement.
 
-MuJoCo computes actual dynamics. Pretrained G1 tracking, classical servos, inverse kinematics and later contact-control experiments are identified separately. References, hypothetical results and realized body states are distinct records. Model thinking pauses simulation time. These experiments do not retrain motion-generator weights.
+MuJoCo supplies dynamics. The current portable hybrid uses classical arm servos with the fixed pretrained G1 actor for legs/trunk. The LLM does not replace every low-level controller. Simulation time pauses while the model deliberates. The procedural 100 BPM score supplies a known construction grid; it is not evidence that an audio model understood arbitrary music.
 
-## Setup and run
+## Setup and first local probe
 
-Python 3.11 is the tested interpreter family. `requirements-observed.txt` records the tested direct numerical/media dependencies; it is not a complete transitive lock file.
+The checked platform is Windows amd64 with CPython 3.11. A fresh isolated environment on the same host was tested; a clean operating system and fresh network asset acquisition were not.
 
 ```powershell
 python -m venv .venv
-.venv/Scripts/python -m pip install -r requirements-observed.txt
-.venv/Scripts/python -m pip install -e .
+.venv/Scripts/python -m pip install --require-hashes -r experiments/agentic/app/bootstrap/requirements-win-cp311-public.lock
 ```
 
-The physical runner additionally needs the pinned upstream ProtoMotions source, its G1 body/mesh/model/controller assets and the admitted safe initialization profile. These are **not in this source-only archive**. Obtain and review their separate licenses using `docs/DEPENDENCIES.md`; do not deserialize an untrusted motion pickle. The original prepared-host Windows scripts use the explicitly reviewed Python/profile under the user's cache. A fresh-machine asset acquisition/install has not been validated.
+The 30-wheel recipe is pinned to public PyPI artifacts. Our installation witness used already downloaded, verified wheels offline. `requirements-observed.txt` is a direct-version summary, not a replacement for the full hash lock. The CLI runs directly from this source tree and does not need a private Codex installation or editable package install.
 
-Validated prepared-host entry point:
+Model, body and mesh binaries are **not distributed here**. `asset_identity.json` identifies 70 required upstream files (69,182,643 materialized bytes), exact hashes, commit, newline conversion and license pointers. Follow [portable setup](design/agentic/BODY_AGENT_PORTABLE_V5.md) and review [external dependencies](docs/DEPENDENCIES.md). Retain upstream notices; do not deserialize untrusted motion pickles.
+
+After obtaining the pinned public assets, materialize a separate runtime copy and create the owned profile:
 
 ```powershell
-./experiments/agentic/embodied/start_body_agent_v4.ps1
+.venv/Scripts/python -I -B experiments/agentic/embodied/materialize_body_assets_v5.py --source ./upstream-protomotions --destination ./local/body-vendor-v5 --identity ./asset_identity.json
+.venv/Scripts/python -I -B experiments/agentic/embodied/prepare_body_profile_v5.py --config ./body-config.json --build
 ```
 
-This serves the bounded reaching/body-agent workflow on `http://127.0.0.1:8777/`. It does not claim the whole-body music goal is solved. The read-only music-candidate viewer is `src/pulsemorph/agentic/performance/review_server_v1.py`, port 8779, and additionally requires the exact local recorded media referenced in that module. It has no generation POST endpoint. The developmental 8778 music-generation application is kept unadmitted until its controller is qualified.
-
-Controller-free tests can be run without starting a motor or model, once the numerical dependencies are present:
+The guide supplies `body-config.json` with explicit interpreter, vendor, profile and output paths, plus a model-free HOLD request. First prepare a bounded plan, review its inputs/budgets, then explicitly approve that exact digest:
 
 ```powershell
-.venv/Scripts/python -m unittest discover -s tests -p "test_agentic_performance_*.py"
+.venv/Scripts/python -I -B experiments/agentic/embodied/run_body_agent_v5.py --config ./body-config.json --request ./hold-request.json --output ./local/body-jobs-v5/hold_001 --plan ./hold-plan.json
+Get-FileHash ./hold-plan.json -Algorithm SHA256
+.venv/Scripts/python -I -B experiments/agentic/embodied/run_body_agent_v5.py --execute --plan ./hold-plan.json --approved-plan-sha256 <reviewed-sha256>
 ```
 
-Some tests import neighboring fixture modules from `tests`; retain the complete included fixture set. Fake/model-injected tests are not live model or physical success evidence.
+Preparation does not construct the physical body. Execution is exclusive, finite and has no automatic retry. Failures return a nonzero process exit. Actual and sandbox traces, failure counters, source pins and sampled observations are preserved. The additive reference adapter uses the configured profile and leaves the shared motion module unchanged.
 
-## Model and sponsor configuration
+Optional hosted task mode reads only `OPENROUTER_API_KEY` or `NVIDIA_API_KEY` from the private process environment. OpenRouter uses the free Nemotron profile without paid fallback. Requested/reported model identity is retained. Do not commit keys, local configs, profiles, jobs or authority files. Provider advice remains a proposal, never execution authority.
 
-- The recorded core experiments used the private local Codex bridge requesting `gpt-6.1-sol`; the bridge reports the requested identity and does not invent an unreturned model identity.
-- Optional Nemotron adapters support NVIDIA NIM (`NVIDIA_API_KEY`) and OpenRouter (`OPENROUTER_API_KEY`). The OpenRouter adapter defaults to `nvidia/nemotron-3.5-super-vl:free`, with no paid fallback or retry. Configure secrets in a private environment, never in repository files. One real advisory review used `nvidia/nemotron-3.5-super-vl:free`:17.687seconds,2images and5845tokens; its decision was `revise`. The proposed movement was not executed or motor-validated. This is advisory model use, not a successful Nemotron-controlled dance.
-- Meterless upstream write/query/fresh-process reopen was verified in earlier tasks. The newest dance branch is not itself a retrieved-memory demonstration.
-- **Zetaris authenticated product use remains unverified.** An account was provisioned with a new email, but no authenticated product query was verified; no address or credentials are included. The event requires Zetaris and Meterless. This is an explicit submission-readiness blocker; a logo or fixture must not replace a real integration.
+The optional V5 HTTP page is explicitly an **engineering setup dashboard**, with job POSTs disabled. It is not an empty dance studio advertised as ready. The historical V4 launcher and 8779 recorded-candidate viewer require their original prepared-host artifacts; they are not portable first-use commands. The final video is available at the link above.
 
-No hosted working-product URL is explicitly required by the checked public rules, but GitHub source with setup/usage, a 1–4 minute workflow video, a deck, sponsor explanation and pre-existing-code disclosure are required. The private submission form has not been inspected. See the official rules linked in `docs/SUBMISSION.md`.
+## Validation and historical boundaries
 
-## License and provenance
+Run the focused controller-free tests after installing the pinned dependencies:
 
-Original agentic project code in this repository is released under the MIT license in `LICENSE`. Shared motion-interface helpers are included for interoperability. Third-party code, model checkpoints, robot/mesh assets, source motion and generated media retain their separate licenses and rights. No ownership or license to those external assets is claimed. See `docs/PREEXISTING_CODE.md` and `docs/DEPENDENCIES.md`.
+```powershell
+.venv/Scripts/python -m unittest discover -s tests -p "test_agentic_body_*v5.py"
+.venv/Scripts/python -m unittest discover -s tests -p "test_agentic_portable_reference_v5.py"
+.venv/Scripts/python -m unittest discover -s tests -p "test_agentic_embodied_core_v2.py"
+```
+
+Fixtures simulate state and providers. Only the separately recorded native witness is physical evidence. The public source tag `v0.1.0-demo` retains the original submitted code; maintenance added on 28 October must not be represented as pre-deadline evidence.
+
+The portal showed **Submitted 1/1**; the final YouTube, GitHub and deck V3 links were verified after save/reload. No organizer-confirmed deadline extension or eligibility is claimed. A separate confirmation email was not found in the checked search.
+
+## Sponsor contributions
+
+- **Nemotron:** one actual later Nemotron 3.5 Super VL critique through OpenRouter reviewed two recorded images (17.687 seconds, 5,845 tokens) and recommended revision. Its advice was not motor-tested and it did not author the original dance.
+- **Meterless:** earlier actual write/query/fresh-process reopen persistence was verified. The newest music experiment is not itself a retrieved-memory demonstration.
+- **Zetaris:** after the initial submission, a real AWS Mini Trial engine returned two provenance-bound recorded-trial summary rows in 7.438 seconds; SQL was saved as `PulseMorph_recorded_trial_evidence`. These were CTE literal inputs, not a persisted datasource or body-planner history retrieval. The experiment's compute/network/storage were subsequently removed; local evidence remains. This is not a pre-deadline compliance claim.
+- **SpaceX AI / SpaceXSI:** no implemented use claimed.
+
+See [pre-existing work](docs/PREEXISTING_CODE.md) and [submission disclosure](docs/SUBMISSION.md). The final English video uses approved Gemini 3.8 Flash-Lite TTS/Kore narration. Editing recorded frames or narration did not create new physical success.
+
+## License
+
+Original agentic code and the included interoperability helpers are covered by [LICENSE](LICENSE). Third-party source, checkpoints, robot/mesh assets, source motion and media retain their separate terms. The private DanceModel learning core is excluded and is not licensed by this publication.

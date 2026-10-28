@@ -1,0 +1,570 @@
+{
+  "schema": "pulsemorph.body_asset_identity.v1",
+  "upstream": {
+    "url": "https://github.com/NVlabs/ProtoMotions",
+    "commit": "f69fdcaabff31846b4d2247207417b57dc788828"
+  },
+  "files": [
+    {
+      "path": "data/pretrained_models/motion_tracker/g1-bones-deploy/compiled_models/unified_pipeline.onnx",
+      "bytes": 22606590,
+      "sha256": "a59baa3e04a951e5cf0b4cc68f24ebaafa9272714226618b99a5017dfc805b4c",
+      "tracked_blob_sha256": "62d075721e85fea56577bc2b56851b154900d3b19bbca26d4dcd12f66adc3b3a",
+      "materialization": "identity",
+      "license_pointer": "data/pretrained_models/motion_tracker/g1-bones-deploy/MODEL_CARD.md"
+    },
+    {
+      "path": "data/pretrained_models/motion_tracker/g1-bones-deploy/compiled_models/unified_pipeline.yaml",
+      "bytes": 6055,
+      "sha256": "57d81b60dda9aeb30c57d3428a822f203a83bca399c5abe82ffea7a9aaf8b139",
+      "tracked_blob_sha256": "9b7896f3355a9d9d5e7d3139b83924eeb2e45c62c30bfda44afe996cfc6cf01c",
+      "materialization": "lf_to_crlf",
+      "license_pointer": "data/pretrained_models/motion_tracker/g1-bones-deploy/MODEL_CARD.md"
+    },
+    {
+      "path": "protomotions/data/assets/mjcf/g1_holo_compat.xml",
+      "bytes": 41005,
+      "sha256": "e3926a6578cafaee38d0a7a3b7e7ebb0031f623c69e5cd34aa97d61e943b7e8e",
+      "tracked_blob_sha256": "f9a455ff0b2822b3d3f68e55b02cd7e21c601a84cf3173237b7bfaf494492846",
+      "materialization": "lf_to_crlf",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/head_link.stl",
+      "bytes": 932784,
+      "sha256": "005fb67fbd3eff94aa8bf4a6e83238174e9f91b6721f7111594322f223724411",
+      "tracked_blob_sha256": "39789723dfa3a57bc69662d23f01707e80aa950031ad2533089d47c4ddf224f3",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_ankle_pitch_link.stl",
+      "bytes": 71184,
+      "sha256": "d49e3abc6f5b12e532062cd575b87b5ef40cd2a3fc18f54a1ca5bba4f773d51d",
+      "tracked_blob_sha256": "8a10af031bb3d928336bc9889255cf92312e755bd3b5da0a61160252a5135548",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_ankle_roll_link.stl",
+      "bytes": 653384,
+      "sha256": "c4092af943141d4d9f74232f3cfa345afc6565f46a077793b8ae0e68b39dc33f",
+      "tracked_blob_sha256": "477492d3e13909734022be45674325e18a1467e49195f0b20a03bdd8132c904e",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_elbow_link.stl",
+      "bytes": 88784,
+      "sha256": "fa752198accd104d5c4c3a01382e45165b944fbbc5acce085059223324e5bed3",
+      "tracked_blob_sha256": "b4686e59e0763c5756392bfd89d32a8013796655d0dda0a5c946b0a4a9d171cb",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_hand_index_0_link.stl",
+      "bytes": 475984,
+      "sha256": "6b35f2f77211d5a366f0b9a4e47c4ee35e536731266f1a34e9efa12db579b892",
+      "tracked_blob_sha256": "8b70d2d3dcd4deec2d2483e8afca5c1e6d9f12f262c78688831358bcf892a73f",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_hand_index_1_link.stl",
+      "bytes": 1521784,
+      "sha256": "9e315ebc8a7a0cb98e033985b586b20d81cf8aa761181ae61ce56fcb14077a06",
+      "tracked_blob_sha256": "4b1278b1d44748564ef6e03c640a6106111c832472ebb2f4d50a75cf74be9653",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_hand_middle_0_link.stl",
+      "bytes": 475984,
+      "sha256": "6b35f2f77211d5a366f0b9a4e47c4ee35e536731266f1a34e9efa12db579b892",
+      "tracked_blob_sha256": "8b70d2d3dcd4deec2d2483e8afca5c1e6d9f12f262c78688831358bcf892a73f",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_hand_middle_1_link.stl",
+      "bytes": 1521784,
+      "sha256": "9e315ebc8a7a0cb98e033985b586b20d81cf8aa761181ae61ce56fcb14077a06",
+      "tracked_blob_sha256": "4b1278b1d44748564ef6e03c640a6106111c832472ebb2f4d50a75cf74be9653",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_hand_palm_link.stl",
+      "bytes": 2140184,
+      "sha256": "23a486b75bd78a9bf03cec25d84d87f97f3dae038cf21a743b6d469b337e4004",
+      "tracked_blob_sha256": "c8cfcb6cba205977a6294ca067eb8d7cf895b1101b43d66d70abe79d052adfab",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_hand_thumb_0_link.stl",
+      "bytes": 8884,
+      "sha256": "a90c721661c0622685488a3c74d1e122c7da89242d3a1daef75edb83422d05e0",
+      "tracked_blob_sha256": "a24df845c2a15c0cab73780e0ff5e5c8c58f6278c528a140898db77dc8788c7d",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_hand_thumb_1_link.stl",
+      "bytes": 475984,
+      "sha256": "445c54a45bc13ce36001556f66bc0f49c83cb40321205ae4d676bb2874325684",
+      "tracked_blob_sha256": "80a2b24b9b61d7ce0e45cd47bc4af73dc4920632bd849ad27914a7b4ecb6e082",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_hand_thumb_2_link.stl",
+      "bytes": 1521784,
+      "sha256": "3d8dbe5085acfc213d21aa8b0782e89cd79084e9678f3a85fc7b04a86b029db5",
+      "tracked_blob_sha256": "ec5a5183682298ded74789ebc38f3d8ee3e20cb84dc6e8afa8fdec967af369a1",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_hip_pitch_link.stl",
+      "bytes": 181684,
+      "sha256": "4725168105ee768ee31638ef22b53f6be2d7641bfd7cfefe803488d884776fa4",
+      "tracked_blob_sha256": "a96e085476c7a3e8f80842682114b2aa8c5dac8263be647dc5feca4f9a01a586",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_hip_roll_link.stl",
+      "bytes": 192184,
+      "sha256": "91f25922ee8a7c3152790051bebad17b4d9cd243569c38fe340285ff93a97acf",
+      "tracked_blob_sha256": "a8fe7aa9e3ed08f8e4c82ac24002dc67adb7da8a4d527d9228600049fc3db53d",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_hip_yaw_link.stl",
+      "bytes": 296284,
+      "sha256": "a16d88aa6ddac8083aa7ad55ed317bea44b1fa003d314fba88965b7ed0f3b55b",
+      "tracked_blob_sha256": "a18d0a9f3bf763eb17c5775074ba2b6f2a5223454ab168f2d2e49b4076c7f072",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_knee_link.stl",
+      "bytes": 854884,
+      "sha256": "8d92b9e3d3a636761150bb8025e32514c4602b91c7028d523ee42b3e632de477",
+      "tracked_blob_sha256": "2b8badf405cea82ed863493eb49e41f472385f873c0f1b36ea728ac9fab71634",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_rubber_hand.stl",
+      "bytes": 2287484,
+      "sha256": "cff2221a690fa69303f61fce68f2d155c1517b52efb6ca9262dd56e0bc6e70fe",
+      "tracked_blob_sha256": "964b6f9017a2e576a4fc2991241439a3b5baeb927d32c90284691c7069b6ca98",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_shoulder_pitch_link.stl",
+      "bytes": 176784,
+      "sha256": "f0d1cfd02fcf0d42f95e678eeca33da3afbcc366ffba5c052847773ec4f31d52",
+      "tracked_blob_sha256": "91909152371f6d79572ef67f9b0975581f7d643a7ae06a57f61ee6b0179600ef",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_shoulder_roll_link.stl",
+      "bytes": 400284,
+      "sha256": "fb9df21687773522598dc384f1a2945c7519f11cbc8bd372a49170316d6eee88",
+      "tracked_blob_sha256": "db5cb23ccc0b4f33d99b519538f74df048250cb857a6f68911f19399f532fe84",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_shoulder_yaw_link.stl",
+      "bytes": 249184,
+      "sha256": "1aa97e9748e924336567992181f78c7cd0652fd52a4afcca3df6b2ef6f9e712e",
+      "tracked_blob_sha256": "af714dc241ef715d1e83d2362bdc573f49fcd7d188c6456d378a377f32874895",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_wrist_pitch_link.stl",
+      "bytes": 85984,
+      "sha256": "b251d8e05047f695d0f536cd78c11973cfa4e78d08cfe82759336cc3471de3a9",
+      "tracked_blob_sha256": "e4609612881af05025dcce6dc23b891dc3cc79d474689b166b7255c9f0dd66c9",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_wrist_roll_link.stl",
+      "bytes": 356184,
+      "sha256": "edc387c9a0ba8c2237e9b296d32531426fabeb6f53e58df45c76106bca74148c",
+      "tracked_blob_sha256": "db46cf4eefce37f8a2f705925cd220493b609ac6e600d3f41ce5d0c9192763ac",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_wrist_roll_rubber_hand.stl",
+      "bytes": 3484884,
+      "sha256": "e81030abd023bd9e4a308ef376d814a2c12d684d8a7670c335bbd5cd7809c909",
+      "tracked_blob_sha256": "80061f6076ec916a697fc9bf85e09999e4b680ededb3f723837722d2c4301040",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/left_wrist_yaw_link.stl",
+      "bytes": 318684,
+      "sha256": "83f8fb3a726bf9613d65dd14f0f447cb918c3c95b3938042a0c9c09749267d3b",
+      "tracked_blob_sha256": "18ae575d9c381faf20c12ea4f00d181334032d35d1d30d5fefc645864da4368d",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/logo_link.stl",
+      "bytes": 243384,
+      "sha256": "8571a0a19bc4916fa55f91449f51d5fdefd751000054865a842449429d5f155b",
+      "tracked_blob_sha256": "28fd481cd7b2b311be5a05e0e6c566c9d11bbb5d53b3a85f98b7b56cc5c6ae7f",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/pelvis.stl",
+      "bytes": 1060884,
+      "sha256": "5ba6bbc888e630550140d3c26763f10206da8c8bd30ed886b8ede41c61f57a31",
+      "tracked_blob_sha256": "5b0fa52861db3a162cdbe21f0f8e712202800fd439d31a9e2f877833339a581f",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/pelvis_contour_link.stl",
+      "bytes": 1805184,
+      "sha256": "5cc5c2c7a312329e3feeb2b03d3fc09fc29705bd01864f6767e51be959662420",
+      "tracked_blob_sha256": "465a663ce774f610221f42ffe3e8352c23aa95de6669ded7a1dca7f61009664d",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_ankle_pitch_link.stl",
+      "bytes": 71184,
+      "sha256": "15be426539ec1be70246d4d82a168806db64a41301af8b35c197a33348c787a9",
+      "tracked_blob_sha256": "5b7f45147d11e8e672890c99614fa49a569ffee2749ec326087d8e9d177999d1",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_ankle_roll_link.stl",
+      "bytes": 653784,
+      "sha256": "4b66222ea56653e627711b56d0a8949b4920da5df091da0ceb343f54e884e3a5",
+      "tracked_blob_sha256": "87d9711756c4f0bd8b76dc727baa86b264be38f2c269824ab810c4f7a4b1f0df",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_elbow_link.stl",
+      "bytes": 88784,
+      "sha256": "1be925d7aa268bb8fddf5362b9173066890c7d32092c05638608126e59d1e2ab",
+      "tracked_blob_sha256": "b12219acef4cc1e5db1b7d89a546f625869d66df49afde4e59251d9b04566611",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_hand_index_0_link.stl",
+      "bytes": 475984,
+      "sha256": "12ab4300c95e437e834f9aef772b3b431c671bf34338930b52ad11aef73bbd0d",
+      "tracked_blob_sha256": "df8eece93e6c8784ce202bfb34d124dc36b63f895dbc0831b8fb81779b260bb2",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_hand_index_1_link.stl",
+      "bytes": 1521784,
+      "sha256": "c9c34efce4563cacdcfd29fc838a982976d40f5442c71219811dcbbf3923a33d",
+      "tracked_blob_sha256": "9d87985a8556e02e20cedb43803ddc185b599710e46d0a09949f40b7e79852d3",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_hand_middle_0_link.stl",
+      "bytes": 475984,
+      "sha256": "12ab4300c95e437e834f9aef772b3b431c671bf34338930b52ad11aef73bbd0d",
+      "tracked_blob_sha256": "df8eece93e6c8784ce202bfb34d124dc36b63f895dbc0831b8fb81779b260bb2",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_hand_middle_1_link.stl",
+      "bytes": 1521784,
+      "sha256": "c9c34efce4563cacdcfd29fc838a982976d40f5442c71219811dcbbf3923a33d",
+      "tracked_blob_sha256": "9d87985a8556e02e20cedb43803ddc185b599710e46d0a09949f40b7e79852d3",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_hand_palm_link.stl",
+      "bytes": 2140184,
+      "sha256": "86c0b231cc44477d64a6493e5a427ba16617a00738112dd187c652675b086fb9",
+      "tracked_blob_sha256": "27ba9007bafb4727cab5294c553f7999d5aa2b7002ccd44057c33babdd979b5b",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_hand_thumb_0_link.stl",
+      "bytes": 8884,
+      "sha256": "544298d0ea1088f5b276a10cc6a6a9e533efdd91594955fdc956c46211d07f83",
+      "tracked_blob_sha256": "d18a62652042c81f3fef721f3b19866a12eb75dcafe67e7a7348765593392a76",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_hand_thumb_1_link.stl",
+      "bytes": 475984,
+      "sha256": "0a9a820da8dd10f298778b714f1364216e8a5976f4fd3a05689ea26327d44bf6",
+      "tracked_blob_sha256": "4abc3c2764e5a4a8e5d7aa05b5ce0b6ce9ba9c4bcf08bbad22fb7856ddf7b986",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_hand_thumb_2_link.stl",
+      "bytes": 1521784,
+      "sha256": "3f1bfb37668e8f61801c8d25f171fa1949e08666be86c67acad7e0079937cc45",
+      "tracked_blob_sha256": "1f3b5b5b4350c035d1652e127274825ecc4c37e39a5f0282d6356e46c7a3ea0e",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_hip_pitch_link.stl",
+      "bytes": 181284,
+      "sha256": "e4f3c99d7f4a7d34eadbef9461fc66e3486cb5442db1ec50c86317d459f1a9c6",
+      "tracked_blob_sha256": "4cb249717d4502462de68774732ac4c8251b302a2694f4f8243e0488f529dbdd",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_hip_roll_link.stl",
+      "bytes": 192684,
+      "sha256": "4c254ef66a356f492947f360dd931965477b631e3fcc841f91ccc46d945d54f6",
+      "tracked_blob_sha256": "08d90815b4d0cbe3a066f3f54bfc33b556cf9702b8e673c38a5bebb7a1ce31ca",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_hip_yaw_link.stl",
+      "bytes": 296284,
+      "sha256": "e479c2936ca2057e9eb2f7dff6c189b7419d7b8484dea0b298cbb36a2a6aa668",
+      "tracked_blob_sha256": "844f96e40af3176ce566e258792273cd15ef8ff06d673f13e87ebc17683f2615",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_knee_link.stl",
+      "bytes": 852284,
+      "sha256": "63c4008449c9bbe701a6e2b557b7a252e90cf3a5abcf54cee46862b9a69f8ec8",
+      "tracked_blob_sha256": "66a0513cb2f7d5571c7af75e57d29f9b6175cd3a42cb407d758ddd6b731e6cea",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_rubber_hand.stl",
+      "bytes": 2192684,
+      "sha256": "99533b778bca6246144fa511bb9d4e555e075c641f2a0251e04372869cd99d67",
+      "tracked_blob_sha256": "dd44fe366eb6443fc8f9aa301e031de5ad9dcb305b1d3a3ef63a50f02c51fa66",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_shoulder_pitch_link.stl",
+      "bytes": 176784,
+      "sha256": "24cdb387e0128dfe602770a81c56cdce3a0181d34d039a11d1aaf8819b7b8c02",
+      "tracked_blob_sha256": "d02241e9fe4fe92203f426a166a548b7a79416f6c0d4b75d8755f4b8624ad987",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_shoulder_roll_link.stl",
+      "bytes": 401884,
+      "sha256": "962b97c48f9ce9e8399f45dd9522e0865d19aa9fd299406b2d475a8fc4a53e81",
+      "tracked_blob_sha256": "a1577c6245b60bd7a74cba5ee784d279f8db66e36ee84d531e2859da98fa834c",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_shoulder_yaw_link.stl",
+      "bytes": 249984,
+      "sha256": "a0b76489271da0c72461a344c9ffb0f0c6e64f019ea5014c1624886c442a2fe5",
+      "tracked_blob_sha256": "a1109f089c72cfcc0739daa68fab60a9131f978dbc774921bb2a52715cc573d2",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_wrist_pitch_link.stl",
+      "bytes": 79584,
+      "sha256": "d22f8f3b3127f15a63e5be1ee273cd5075786c3142f1c3d9f76cbf43d2a26477",
+      "tracked_blob_sha256": "96de31e81dbf46a68553ddd27bb3f7d123180d4e6d5f087daf6be594f464179c",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_wrist_roll_link.stl",
+      "bytes": 356084,
+      "sha256": "a7ee9212ff5b94d6cb7f52bb1bbf3f352194d5b598acff74f4c77d340c5b344f",
+      "tracked_blob_sha256": "7707f5eee9bca47e0dbdf08ccc28c2b90b8dbf3a25844aa2b10f1343e795a6de",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_wrist_roll_rubber_hand.stl",
+      "bytes": 3481584,
+      "sha256": "0729aff1ac4356f9314de13a46906267642e58bc47f0d8a7f17f6590a6242ccf",
+      "tracked_blob_sha256": "56995461f099775371a40d5af0ec431a60327670c1f15ff85737fb92dbd5cd58",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/right_wrist_yaw_link.stl",
+      "bytes": 341484,
+      "sha256": "bc9dece2d12509707e0057ba2e48df8f3d56db0c79410212963a25e8a50f61a6",
+      "tracked_blob_sha256": "8b0bdde5a0231706cc4668f15808376e7e52b173ef685864192e4224773e81cd",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/torso_constraint_L_link.stl",
+      "bytes": 203584,
+      "sha256": "82be7f93e85b3d303a1d1e1847e2c916939bd61c424ed1ebd28691ec33909dd1",
+      "tracked_blob_sha256": "6898d99105b246e31c39a0c0e5b0d519debdc9491557fb65d337b4311376db4b",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/torso_constraint_L_rod_link.stl",
+      "bytes": 74884,
+      "sha256": "c10de1effa7ea797ac268006aa2a739036c7e1f326b2012d711ee2c20c5a6e96",
+      "tracked_blob_sha256": "86dc23b17f2c8822006e05594f75cdbcaee7e040f82adb4966c292a4d635de24",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/torso_constraint_R_link.stl",
+      "bytes": 203584,
+      "sha256": "54ded433a3a0c76027365856fdbd55215643de88846f7d436598a4071e682725",
+      "tracked_blob_sha256": "634a391e739ff2e0b2fec42ffe78f5678d53b592111ba6db46b66c8548982c5f",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/torso_constraint_R_rod_link.stl",
+      "bytes": 74884,
+      "sha256": "cb83fd38a9f06c99e3f301c70f12d94ae770a8f0cf9501f83580a27f908990b4",
+      "tracked_blob_sha256": "fdf015fd32cc99e79946d6857203d709cb43f81de9482405f8802963dd4b56bd",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/torso_link.stl",
+      "bytes": 2232984,
+      "sha256": "e96d023f0368a4e3450b86ca5d4f10227d8141156a373e7da8cb3c93266523e0",
+      "tracked_blob_sha256": "53b039786e011665c10066e451f9c6d412fb0933d36b8f29951ab94e3a69c8d7",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/torso_link_rev_1_0.stl",
+      "bytes": 2570584,
+      "sha256": "11ddb46f2098efbbd8816b1d65893632d8e78be936376c7cdcd6771899ccc723",
+      "tracked_blob_sha256": "b4bfe49843dd40a1f24ad1e7e84c6019521d4e0c5f7345ef89b71b27b1d99f7a",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/waist_constraint_L.stl",
+      "bytes": 114684,
+      "sha256": "8ebafdcb4de6871113f0ca2c356618d6e46b1d50f6c0bf9e37f47b9d8e100d99",
+      "tracked_blob_sha256": "e0c5f82409c1b7dcde97bdcebcf0c439a1ea5ebceb36e4e6470fb2a79df99cf1",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/waist_constraint_R.stl",
+      "bytes": 114684,
+      "sha256": "791902a291ffbd35ab97383b7b44ea5d975de7c80eef838797c970790b382ca9",
+      "tracked_blob_sha256": "b9d764b6cdedf669233d2476ade0e00557c6a83864083f4223990b4cef7594b9",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/waist_roll_link.stl",
+      "bytes": 24184,
+      "sha256": "34f0aa73f41131230be4d25876c944fdf6c24d62553f199ff8b980c15e8913df",
+      "tracked_blob_sha256": "455f3924530a4a29919b4007b846f67db4f239bd65666e286028460b8d1b8498",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/waist_roll_link_rev_1_0.stl",
+      "bytes": 85884,
+      "sha256": "b67c347a05abc3e8ddae600d98a082bee273bb39f8e651647708b0a7140a8a97",
+      "tracked_blob_sha256": "37842a44d68201c184b8e8c67432d27f9f68a64e8fee1f6f33b62a904c4ad88a",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/waist_support_link.stl",
+      "bytes": 150484,
+      "sha256": "1fae9e1bb609848a1667d32eed8d6083ae443538a306843056a2a660f1b2926a",
+      "tracked_blob_sha256": "f0647648be7398e0eed9a5413f4aecf843f5aa9b4540c988f5789167eafa5141",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/waist_yaw_link.stl",
+      "bytes": 336284,
+      "sha256": "2883f20e03f09b669b5b4ce10677ee6b5191c0934b584d7cbaef2d0662856ffb",
+      "tracked_blob_sha256": "f60658a7284efc389d7179bfb00d819eca76fd608547930fc5c1be85762a3a6d",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "protomotions/data/assets/mesh/G1/waist_yaw_link_rev_1_0.stl",
+      "bytes": 619984,
+      "sha256": "ec6db442b11f25eed898b5add07940c85d804f300de24dcbd264ccd8be7d554c",
+      "tracked_blob_sha256": "a5cf8350e9bd4dc46f68cc9a2be5409ddee67663c9df59f5c5723b3c50e6ae80",
+      "materialization": "identity",
+      "license_pointer": "protomotions/data/assets/mesh/G1/LICENSE"
+    },
+    {
+      "path": "deployment/test_tracker_mujoco.py",
+      "bytes": 40105,
+      "sha256": "e61afd30fe065d997d1977ff5b45e3ad73788b6e7e6068257b921f419b9228bd",
+      "tracked_blob_sha256": "89a7b662abae8e8c0a06eab096359bc9b3b0999c2025498cd7b48f0033cb4188",
+      "materialization": "lf_to_crlf",
+      "license_pointer": "LICENSE.md"
+    },
+    {
+      "path": "deployment/tracker_inputs.py",
+      "bytes": 10060,
+      "sha256": "5f613be0d5116f49674a6f853dfad47ef21aa27582a52abdebde949837deec9f",
+      "tracked_blob_sha256": "ca80ca4c994d18025912e6feb5da72953f6d2fd4eff3662b3d8c4a39f1a1e829",
+      "materialization": "lf_to_crlf",
+      "license_pointer": "LICENSE.md"
+    },
+    {
+      "path": "deployment/state_utils.py",
+      "bytes": 15745,
+      "sha256": "7c1cbc9880537ced4cc8ab8082616c0fda02de4d1011107166296244a68c421a",
+      "tracked_blob_sha256": "ac763720451020fed5e52040bb666743495b5634d6afc7e173872451998b3c1f",
+      "materialization": "lf_to_crlf",
+      "license_pointer": "LICENSE.md"
+    },
+    {
+      "path": "deployment/motion_utils.py",
+      "bytes": 15191,
+      "sha256": "14ec51cde42fc086334f67aa399d9bf78913d1fb4465384cf688c396782084d7",
+      "tracked_blob_sha256": "84b06a64118ac66bb5fafbd29f6af71541dfae1dd9f6cb0a56abc80a650b6b4b",
+      "materialization": "lf_to_crlf",
+      "license_pointer": "LICENSE.md"
+    }
+  ],
+  "scope": "Body/model/helper identity only; no motion clips, private profiles or historical jobs. Does not grant rights or physical admission."
+}
