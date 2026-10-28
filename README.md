@@ -1,3 +1,7 @@
+> **Final demo:** [Watch the 150-second English video](https://youtu.be/9ue_CYnoW1w). English on-screen labels and Gemini 3.8 Flash-Lite TTS narration. [Deck and downloadable files](https://github.com/hik20/pulsemorph-physical-agent/releases/tag/v0.1.0-demo).
+>
+> The hackathon portal shows Submitted 1/1 and its video URL was verified after reload. This does not establish an organizer-confirmed deadline extension or eligibility. Zetaris Cloud Gateway verified our AWS binding and launched a Mini Trial compute; useful SQL/data retrieval is still pending provisioning.
+
 # PulseMorph Physical Agent
 
 This public repository covers the agentic physical-feedback experiments only. DanceModel neural-network architecture, training code, datasets and weights remain private and are not licensed or distributed here. Shared motion contracts are included only to support the agentic runtime.
